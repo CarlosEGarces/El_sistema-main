@@ -42,13 +42,6 @@ function showProgramButtons() {
         "Este programa está diseñado para niños desde los 4 años de edad, donde dan sus primeros pasos en el ámbito musical.",
     },
     {
-      id: "preinfantil",
-      icon: "🎻",
-      name: "Orquesta PreInfantil",
-      description:
-        "La Orquesta PreInfantil juega un rol fundamental y estratégico en la formación de nuestros jóvenes músicos.",
-    },
-    {
       id: "alma-llanera",
       icon: "🪕",
       name: "Programa Alma Llanera",
@@ -345,38 +338,15 @@ function showProgramDetails(programId) {
 
   switch (programId) {
     case "iniciacion":
-      emoji = "📚"
-      detailsHTML = `
-        <strong>📚 PROGRAMA DE INICIACIÓN MUSICAL</strong><br><br>
-        Este programa está diseñado para niños desde los 4 años de edad, donde dan sus primeros pasos en el ámbito musical.<br><br>
-        <strong>👨‍🏫 Profesores encargados:</strong><br>
-        • Julio Sanchez<br>
-        • Martha Cabrera<br>
-        • Maritza Madrid<br><br>
-        El programa introduce a los niños en el mundo de la música de manera lúdica y didáctica, desarrollando sus capacidades auditivas, rítmicas y expresivas desde temprana edad.
-      `
-      break
+      // Mostrar respuesta del usuario
+      const userMessage = document.createElement("div")
+      userMessage.className = "user-message"
+      userMessage.textContent = "Programa de Iniciación Musical"
+      chatBox.appendChild(userMessage)
 
-    case "preinfantil":
-      emoji = "🎻"
-      detailsHTML = `
-        <strong>🎻 ORQUESTA PREINFANTIL</strong><br><br>
-        La Orquesta PreInfantil juega un rol fundamental y estratégico en la formación de nuestros jóvenes músicos:<br><br>
-        <strong>1️⃣ Introducción Temprana a la Música Sinfónica</strong><br><br>
-        <strong>2️⃣ Desarrollo de Habilidades Musicales Básicas:</strong><br>
-        • Afinación y ritmo<br>
-        • Coordinación y motricidad fina<br>
-        • Escucha activa y ensamble<br><br>
-        <strong>3️⃣ Formación en Disciplina y Trabajo en Equipo:</strong><br>
-        • Respeto mutuo<br>
-        • Comunicación efectiva<br>
-        • Solidaridad y apoyo colectivo<br><br>
-        <strong>4️⃣ Impacto en el Desarrollo Cognitivo y Emocional:</strong><br>
-        • Fortalece la autoestima y confianza<br>
-        • Ayuda a gestionar emociones<br>
-        • Fomenta la creatividad e imaginación
-      `
-      break
+      // Mostrar botones de sub-programas de iniciación
+      showInitiationSubPrograms()
+      return
 
     case "alma-llanera":
       emoji = "🪕"
@@ -1208,16 +1178,14 @@ function processUserMessage(userInput, chatBox) {
       "Nuestra 'Galería Audiovisual' es un tesoro de momentos mágicos. ¡No te la pierdas!",
     ])
   } else if (
-    normalizedInput.includes("patrocinante") ||
-    normalizedInput.includes("patrocinadores") ||
-    normalizedInput.includes("sponsor") ||
-    normalizedInput.includes("sponsors")
+    normalizedInput.includes("colaboradores") ||
+    normalizedInput.includes("colaborador") 
   ) {
     emoji = "🤝"
     botResponseText = randomResponse([
-      "Los patrocinantes que apoyan nuestros eventos están listados en la sección 'Patrocinantes'. ¡Gracias a ellos hacemos posible la música!",
-      "Nuestros patrocinadores son héroes anónimos que hacen posible cada concierto. Conócelos en la sección 'Patrocinantes'.",
-      "¡La música necesita aliados! Descubre quiénes nos apoyan en la sección 'Patrocinantes'.",
+      "Los colaboradores que apoyan nuestros eventos están listados en la sección 'Colaboradores'. ¡Gracias a ellos hacemos posible la música!",
+      "Nuestros colaboradores son héroes anónimos que hacen posible cada concierto. Conócelos en la sección 'Colaboradores'.",
+      "¡La música necesita aliados! Descubre quiénes nos apoyan en la sección 'colaboradoreses'.",
     ])
   } else if (
     normalizedInput.includes("contacto") ||
@@ -1245,6 +1213,7 @@ function processUserMessage(userInput, chatBox) {
     ])
   } else if (
     normalizedInput.includes("quien eres") ||
+    normalizedInput.includes("quien es") ||
     normalizedInput.includes("tu nombre") ||
     normalizedInput.includes("como te llamas")
   ) {
@@ -1444,17 +1413,15 @@ function processUserMessage(userInput, chatBox) {
 
   // Respuestas detalladas sobre programas específicos
   else if (normalizedInput.includes("iniciacion") || normalizedInput.includes("inicial")) {
-    emoji = "📚"
-    const detailsHTML = `
-        <strong>📚 PROGRAMA DE INICIACIÓN MUSICAL</strong><br><br>
-        Este programa está diseñado para niños desde los 4 años de edad, donde dan sus primeros pasos en el ámbito musical.<br><br>
-        <strong>👨‍🏫 Profesores encargados:</strong><br>
-        • Julio Sanchez<br>
-        • Martha Cabrera<br>
-        • Maritza Madrid<br><br>
-        El programa introduce a los niños en el mundo de la música de manera lúdica y didáctica, desarrollando sus capacidades auditivas, rítmicas y expresivas desde temprana edad.
-      `
-    botResponseText = detailsHTML
+    // Mostrar respuesta del usuario
+    const userMessage = document.createElement("div")
+    userMessage.className = "user-message"
+    userMessage.textContent = "Programa de Iniciación Musical"
+    chatBox.appendChild(userMessage)
+
+    // Mostrar botones de sub-programas de iniciación
+    showInitiationSubPrograms()
+    return
   } else if (normalizedInput.includes("preinfantil") || normalizedInput.includes("pre infantil")) {
     emoji = "🎻"
     const detailsHTML = `
@@ -1473,6 +1440,10 @@ function processUserMessage(userInput, chatBox) {
         • Fortalece la autoestima y confianza<br>
         • Ayuda a gestionar emociones<br>
         • Fomenta la creatividad e imaginación
+        <strong>👩‍🏫 Profesores encargados:</strong><br>
+        • Julio Sanchez 
+        • Martha Cabrera 
+        • Maritza Madrid 
       `
     botResponseText = detailsHTML
   } else if (normalizedInput.includes("alma llanera") || normalizedInput.includes("llanera")) {
@@ -1535,7 +1506,6 @@ function processUserMessage(userInput, chatBox) {
     botResponseText = detailsHTML
   } else if (
     normalizedInput.includes("ennio palumbi") ||
-    normalizedInput.includes("ennio") ||
     normalizedInput.includes("palumbi") ||
     normalizedInput.includes("maestro palumbi") ||
     normalizedInput.includes("fundador palumbi")
@@ -1719,7 +1689,6 @@ function processUserMessage(userInput, chatBox) {
     normalizedInput.includes("que es el sistema") ||
     normalizedInput.includes("quienes somos") ||
     normalizedInput.includes("mision") ||
-    normalizedInput.includes("objetivo") ||
     normalizedInput.includes("proposito")
   ) {
     emoji = "🌟"
@@ -2016,3 +1985,146 @@ document.addEventListener("DOMContentLoaded", () => {
     handleChatbotTheme()
   }, 100)
 })
+
+// Función para mostrar sub-programas de iniciación musical
+function showInitiationSubPrograms() {
+  const chatBox = document.getElementById("chat-box")
+
+  const introMessage = document.createElement("div")
+  introMessage.className = "bot-message"
+  introMessage.innerHTML = `<span class="emoji">📚</span> <strong>Programa de Iniciación Musical</strong><br><br>Este programa está diseñado para niños desde los 4 años de edad, Profesores Encargados: •Julio Sanchez •Martha Cabrera •Maritza Madrid •Anghel Rios. Selecciona la agrupación que te interese:`
+  chatBox.appendChild(introMessage)
+
+  const initiationContainer = document.createElement("div")
+  initiationContainer.className = "initiation-container"
+
+  const subPrograms = [
+    {
+      id: "preinfantil",
+      icon: "🎻",
+      name: "Orquesta PreInfantil",
+      description: "Primer contacto con instrumentos sinfónicos y formación en conjunto.",
+    },
+    {
+      id: "flautas-dulces",
+      icon: "🎵",
+      name: "Orquesta de Flautas Dulces",
+      description: "Desarrollo musical a través de la flauta dulce en diferentes voces.",
+    },
+    {
+      id: "orquesta-inicial",
+      icon: "🎼",
+      name: "Orquesta Inicial",
+      description: "Primer contacto estructurado con instrumentos sinfónicos.",
+    },
+  ]
+
+  subPrograms.forEach((program) => {
+    const programButton = document.createElement("button")
+    programButton.className = "initiation-sub-button"
+    programButton.innerHTML = `
+      <div class="initiation-sub-icon">${program.icon}</div>
+      <div class="initiation-sub-content">
+        <div class="initiation-sub-title">${program.name}</div>
+        <div class="initiation-sub-desc">${program.description}</div>
+      </div>
+    `
+
+    programButton.addEventListener("click", () => {
+      showInitiationSubDetails(program.id)
+    })
+
+    initiationContainer.appendChild(programButton)
+  })
+
+  chatBox.appendChild(initiationContainer)
+  chatBox.scrollTop = chatBox.scrollHeight
+}
+
+// Función para mostrar detalles de sub-programas de iniciación
+function showInitiationSubDetails(subProgramId) {
+  const chatBox = document.getElementById("chat-box")
+  let detailsHTML = ""
+  let emoji = ""
+
+  switch (subProgramId) {
+    case "preinfantil":
+      emoji = "🎻"
+      detailsHTML = `
+        <strong>🎻 ORQUESTA PREINFANTIL</strong><br><br>
+        La Orquesta PreInfantil juega un rol fundamental y estratégico en la formación de nuestros jóvenes músicos:<br><br>
+        <strong>1️⃣ Introducción Temprana a la Música Sinfónica</strong><br><br>
+        <strong>2️⃣ Desarrollo de Habilidades Musicales Básicas:</strong><br>
+        • Afinación y ritmo<br>
+        • Coordinación y motricidad fina<br>
+        • Escucha activa y ensamble<br><br>
+        <strong>3️⃣ Formación en Disciplina y Trabajo en Equipo:</strong><br>
+        • Respeto mutuo<br>
+        • Comunicación efectiva<br>
+        • Solidaridad y apoyo colectivo<br><br>
+        <strong>4️⃣ Impacto en el Desarrollo Cognitivo y Emocional:</strong><br>
+        • Fortalece la autoestima y confianza<br>
+        • Ayuda a gestionar emociones<br>
+        • Fomenta la creatividad e imaginación
+        <strong>👩‍🏫 Profesores encargados:</strong><br>
+        • Julio Sanchez 
+        • Martha Cabrera 
+        • Maritza Madrid 
+      `
+      break
+
+    case "flautas-dulces":
+      emoji = "🎵"
+      detailsHTML = `
+        <strong>🎵 ORQUESTA DE FLAUTAS DULCES</strong><br><br>
+        La orquesta de flautas dulces desempeña un papel fundamental en el desarrollo musical infantil:<br><br>
+        <strong>1️⃣ Accesibilidad del instrumento:</strong><br>
+        La flauta dulce es económica, fácil de manipular y adecuada para manos pequeñas, lo que permite una introducción temprana a la música.<br><br>
+        <strong>2️⃣ Formación auditiva y técnica:</strong><br>
+        Tocar en orquesta desarrolla la afinación, la lectura musical, el sentido del ritmo y la coordinación motora fina de forma progresiva.<br><br>
+        <strong>3️⃣ Trabajo en conjunto:</strong><br>
+        La práctica en grupo fomenta habilidades sociales clave como la escucha activa, el respeto por los turnos y la cooperación, elementos esenciales en la música de conjunto.<br><br>
+        <strong>4️⃣ Desarrollo integral:</strong><br>
+        Al incluir distintas voces (soprano, alto, tenor, bajo), la orquesta introduce al niño en conceptos de armonía, estructura y polifonía desde una edad temprana.<br><br>
+        <strong>5️⃣ Motivación y disciplina:</strong><br>
+        La participación en ensayos y conciertos proporciona metas claras, motivación intrínseca y refuerza la constancia y la responsabilidad.<br><br>
+        <strong>👩‍🏫 Profesor encargado:</strong><br>
+        • Anghel Rios
+      `
+      break
+
+    case "orquesta-inicial":
+      emoji = "🎼"
+      detailsHTML = `
+        <strong>🎼 ORQUESTA INICIAL</strong><br><br>
+        La Orquesta Inicial es crucial en el desarrollo musical infantil, ya que representa el primer contacto estructurado del niño con los instrumentos sinfónicos:<br><br>
+        <strong>1️⃣ Descubrimiento sonoro:</strong><br>
+        Permite al niño explorar los timbres y posibilidades de diferentes instrumentos, ayudándolo a identificar afinidades y potencialidades personales.<br><br>
+        <strong>2️⃣ Fundamentos técnicos y musicales:</strong><br>
+        Introduce las bases del manejo instrumental, lectura musical, postura y respiración, estableciendo una formación sólida desde el inicio.<br><br>
+        <strong>3️⃣ Escucha activa y disciplina colectiva:</strong><br>
+        Al tocar en conjunto desde el primer momento, el niño desarrolla la escucha, la atención compartida y el respeto por las indicaciones del director y de sus compañeros.<br><br>
+        <strong>4️⃣ Sentido de pertenencia y autoestima:</strong><br>
+        Integrarse a una orquesta desde el comienzo fortalece el sentido de identidad, la seguridad emocional y la motivación para superarse a través del arte.<br><br>
+        <strong>5️⃣ Puerta de entrada al lenguaje orquestal:</strong><br>
+        La Orquesta Inicial introduce conceptos de dinámica, fraseo, diálogo musical y estructura formal en un contexto lúdico y formativo.<br><br>
+        <strong>👩‍🏫 Profesor encargado:</strong><br>
+        • Anghel Rios
+      `
+      break
+  }
+
+  // Mostrar respuesta del usuario
+  const userMessage = document.createElement("div")
+  userMessage.className = "user-message"
+  userMessage.textContent = subProgramId.replace("-", " ")
+  chatBox.appendChild(userMessage)
+
+  // Mostrar detalles del sub-programa
+  const detailsMessage = document.createElement("div")
+  detailsMessage.className = "bot-message initiation-sub-details"
+  detailsMessage.innerHTML = `<span class="emoji">${emoji}</span> ${detailsHTML}`
+  chatBox.appendChild(detailsMessage)
+
+  chatBox.scrollTop = chatBox.scrollHeight
+}

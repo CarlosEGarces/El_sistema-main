@@ -1,4 +1,5 @@
 /* Estilos para el chatbot con soporte para modo claro/oscuro */
+/* Estilos para el chatbot con soporte para modo claro/oscuro */
 :root {
   --primary-color: #00addc;
   --secondary-color: #72d54a;
@@ -1137,6 +1138,122 @@ body {
   border-left: 4px solid #4a148c;
   font-weight: 500;
   line-height: 1.5;
+}
+
+/* Estilos para los botones de sub-programas de iniciación */
+.initiation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.initiation-sub-button {
+  display: flex;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #e8f5e8, #d4f4dd);
+  border: 1px solid #72d54a;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.initiation-sub-button:hover {
+  background: linear-gradient(135deg, #d4f4dd, #c8f2d4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-color: #5cb85c;
+}
+
+.initiation-sub-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.initiation-sub-icon {
+  font-size: 2em;
+  margin-right: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.initiation-sub-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.initiation-sub-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #2d5a2d;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.initiation-sub-desc {
+  color: #4a6741;
+  font-size: 0.9em;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.initiation-sub-details {
+  background: linear-gradient(135deg, #72d54a, #5cb85c);
+  color: white;
+  border-left: 4px solid #4a934a;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.initiation-sub-details strong {
+  display: block;
+  margin: 8px 0 4px 0;
+}
+
+/* Responsive para móviles - sub-programas de iniciación */
+@media (max-width: 768px) {
+  .initiation-sub-button {
+    padding: 12px;
+  }
+
+  .initiation-sub-icon {
+    font-size: 1.8em;
+    margin-right: 12px;
+  }
+
+  .initiation-sub-title {
+    font-size: 1em;
+  }
+
+  .initiation-sub-desc {
+    font-size: 0.85em;
+  }
+}
+
+/* Responsive para pantallas muy pequeñas - sub-programas de iniciación */
+@media (max-width: 480px) {
+  .initiation-sub-button {
+    padding: 10px;
+  }
+
+  .initiation-sub-icon {
+    font-size: 1.6em;
+    margin-right: 10px;
+  }
+
+  .initiation-sub-title {
+    font-size: 0.95em;
+  }
+
+  .initiation-sub-desc {
+    font-size: 0.8em;
+  }
 }
 
 /* Responsive para móviles - MEJORADO */

@@ -165,7 +165,7 @@ function createChatbotButton() {
     @media (max-width: 768px) {
       .chatbot-iframe {
         width: calc(100vw - 20px);
-        height: calc(100vh - 120px);
+        height: calc(100vh - 100px);
         right: 10px;
         bottom: 80px;
       }
