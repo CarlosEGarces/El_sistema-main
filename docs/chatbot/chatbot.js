@@ -830,7 +830,7 @@ document.addEventListener("DOMContentLoaded", () => {
     userInput.value = ""
 
     // Desplazar hacia abajo
-    chatBox.scrollTop = chatBox.scrollHeight
+   chatBox.scrollTop = chatBox.scrollHeight
 
     // Mostrar indicador de escritura
     const typingIndicator = document.createElement("div")
@@ -1355,7 +1355,7 @@ function processUserMessage(userInput, chatBox) {
     iframeContainer.appendChild(iframe)
     chatBox.appendChild(iframeContainer)
 
-    chatBox.scrollTop = chatBox.scrollHeight // Desplazar hacia abajo
+    // chatBox.scrollTop = chatBox.scrollHeight // Desplazar hacia abajo
     return // Salir para evitar agregar una respuesta predeterminada
   }
 
