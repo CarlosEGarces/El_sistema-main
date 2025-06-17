@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posibles Patrocinadores - El Sistema Ciudad Guayana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="posibles-patrocinadores-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header personalizado para Posibles Patrocinadores -->
+    <header class="page-header-gradient">
+        <div class="container">
+            <!-- Logo que aparece primero -->
+            <img id="page-logo" 
+                 src="../img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+                 alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+                 loading="lazy" 
+                 class="page-logo">
+            
+            <!-- Título que aparece después -->
+            <div id="page-title" class="page-title-container">
+                <h1 class="page-title-line1">POSIBLES PATROCINADORES</h1>
+                <p class="page-title-line2">Únete a nuestra misión de transformar vidas a través de la música</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <button class="hamburger-menu" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../calendario.html">CALENDARIO</a></li>
+                        <li><a href="../boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="programa-coral.html">Programa Coral</a></li>
+                        <li><a href="orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">GALERÍA AUDIOVISUAL</a>
+                    <div class="camera-animation"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="../galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../donaciones.html">DONACIONES</a></li>
+                        <li><a href="../patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                        <li><a href="merch.html">MERCHANDISING</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="../patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="../comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="../noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                        <li><a href="buzon-sugerencias.html">BUZÓN DE SUGERENCIAS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu-container" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="close-menu-button" aria-label="Cerrar menú">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li class="has-dropdown">
+                    <button class="dropdown-toggle">
+                        CONCIERTOS Y EVENTOS
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="../calendario.html">CALENDARIO</a></li>
+                        <li><a href="../boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <button class="dropdown-toggle">
+                        AGRUPACIONES
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="programa-coral.html">Programa Coral</a></li>
+                        <li><a href="orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <button class="dropdown-toggle">
+                        GALERÍA AUDIOVISUAL
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="../galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="../galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <button class="dropdown-toggle">
+                        APOYO
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="../donaciones.html">DONACIONES</a></li>
+                        <li><a href="../patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                        <li><a href="merch.html">MERCHANDISING</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <button class="dropdown-toggle">
+                        SOBRE NOSOTROS
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="../quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="../patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="../comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="../noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                        <li><a href="buzon-sugerencias.html">BUZÓN DE SUGERENCIAS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sección de logo y redes sociales -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="../img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Sección de introducción -->
+        <section class="sponsor-intro-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="intro-content animate-on-scroll" data-animation="fadeInUp">
+                        <h2 class="section-title">BIENVENIDOS FUTUROS ALIADOS</h2>
+                        <p class="intro-description">
+                            ¿Tu empresa busca generar un impacto positivo en la comunidad mientras fortalece 
+                            su imagen corporativa? El Sistema Ciudad Guayana te ofrece la oportunidad única 
+                            de ser parte de una transformación social a través de la música. Nuestros programas 
+                            han cambiado la vida de cientos de niños y jóvenes, y con tu apoyo podemos llegar 
+                            a muchos más. Descubre cómo tu patrocinio puede crear valor compartido para tu 
+                            empresa y nuestra comunidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de beneficios para patrocinadores -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">BENEFICIOS DE SER NUESTRO PATROCINADOR</h2>
+                <div class="benefits-grid">
+                    <article class="benefit-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Visibilidad de Marca</h3>
+                        <p>
+                            Tu logo y marca tendrán presencia en nuestros conciertos, eventos, 
+                            material promocional y redes sociales, llegando a miles de personas.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Responsabilidad Social</h3>
+                        <p>
+                            Demuestra el compromiso de tu empresa con la educación, la cultura 
+                            y el desarrollo social de la comunidad guayanesa.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Conexión con la Comunidad</h3>
+                        <p>
+                            Fortalece los vínculos de tu empresa con la comunidad local 
+                            y genera una percepción positiva entre tus clientes y stakeholders.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Reconocimiento Público</h3>
+                        <p>
+                            Recibe reconocimiento público por tu contribución al desarrollo 
+                            cultural y educativo de Ciudad Guayana y la región.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card animate-on-scroll" data-animation="fadeInUp" data-delay="500">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Retorno de Inversión</h3>
+                        <p>
+                            Obtén un retorno medible en términos de imagen corporativa, 
+                            posicionamiento de marca y engagement con tu audiencia objetivo.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card animate-on-scroll" data-animation="fadeInUp" data-delay="600">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Eventos Exclusivos</h3>
+                        <p>
+                            Acceso a eventos especiales, conciertos privados y actividades 
+                            exclusivas para patrocinadores y sus invitados.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de niveles de patrocinio -->
+        <section class="sponsorship-levels-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">NIVELES DE PATROCINIO</h2>
+                <p class="levels-subtitle animate-on-scroll" data-animation="fadeInUp">
+                    Elige el nivel de patrocinio que mejor se adapte a tus objetivos y presupuesto
+                </p>
+                
+                <div class="levels-grid">
+                    <div class="level-card animate-on-scroll" data-animation="fadeInLeft">
+                        <div class="level-header">
+                            <div class="level-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>PATROCINADOR BRONCE</h3>
+                            <p class="level-subtitle">Apoyo Fundamental</p>
+                        </div>
+                        <div class="level-content">
+                            <ul class="level-benefits">
+                                <li><i class="fas fa-check"></i> Logo en material promocional</li>
+                                <li><i class="fas fa-check"></i> Mención en redes sociales</li>
+                                <li><i class="fas fa-check"></i> Certificado de reconocimiento</li>
+                                <li><i class="fas fa-check"></i> Invitaciones a conciertos principales</li>
+                                <li><i class="fas fa-check"></i> Reporte de impacto anual</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="level-card featured animate-on-scroll" data-animation="fadeInUp">
+                        <div class="featured-badge">MÁS POPULAR</div>
+                        <div class="level-header">
+                            <div class="level-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>PATROCINADOR PLATA</h3>
+                            <p class="level-subtitle">Alianza Estratégica</p>
+                        </div>
+                        <div class="level-content">
+                            <ul class="level-benefits">
+                                <li><i class="fas fa-check"></i> Todo lo incluido en Bronce</li>
+                                <li><i class="fas fa-check"></i> Logo prominente en eventos</li>
+                                <li><i class="fas fa-check"></i> Menciones en medios de comunicación</li>
+                                <li><i class="fas fa-check"></i> Evento corporativo exclusivo</li>
+                                <li><i class="fas fa-check"></i> Presentación en tu empresa</li>
+                                <li><i class="fas fa-check"></i> Contenido personalizado para RRSS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="level-card animate-on-scroll" data-animation="fadeInRight">
+                        <div class="level-header">
+                            <div class="level-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h3>PATROCINADOR ORO</h3>
+                            <p class="level-subtitle">Socio Principal</p>
+                        </div>
+                        <div class="level-content">
+                            <ul class="level-benefits">
+                                <li><i class="fas fa-check"></i> Todo lo incluido en Plata</li>
+                                <li><i class="fas fa-check"></i> Naming rights de eventos</li>
+                                <li><i class="fas fa-check"></i> Presencia en todos los materiales</li>
+                                <li><i class="fas fa-check"></i> Concierto corporativo anual</li>
+                                <li><i class="fas fa-check"></i> Participación en junta directiva</li>
+                                <li><i class="fas fa-check"></i> Campaña publicitaria conjunta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de impacto y estadísticas -->
+        <section class="impact-section">
+            <div class="container">
+                <div class="impact-content">
+                    <div class="impact-text animate-on-scroll" data-animation="fadeInLeft">
+                        <h2>EL IMPACTO DE TU PATROCINIO</h2>
+                        <p>
+                            Cuando decides patrocinar El Sistema Ciudad Guayana, no solo inviertes en música, 
+                            inviertes en el futuro de nuestra comunidad. Cada aporte se traduce en oportunidades 
+                            reales para niños y jóvenes que encuentran en la música una alternativa de vida, 
+                            educación y desarrollo personal.
+                        </p>
+                        <div class="impact-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Niños y jóvenes beneficiados</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Conciertos anuales</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15</div>
+                                <div class="stat-label">Años de trayectoria</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Educación gratuita</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="impact-image animate-on-scroll" data-animation="fadeInRight">
+                        <div class="impact-gradient">
+                            <div class="impact-overlay">
+                                <i class="fas fa-heart impact-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de patrocinadores actuales -->
+        <section class="current-sponsors-section">
+            <div class="container">
+                <div class="sponsors-content">
+                    <div class="sponsors-text animate-on-scroll" data-animation="fadeInLeft">
+                        <h2>NUESTROS PATROCINADORES ACTUALES</h2>
+                        <p>
+                            Conoce a las empresas e instituciones que ya forman parte de nuestra familia 
+                            y han decidido apostar por la transformación social a través de la música. 
+                            Ellos han comprendido el valor de invertir en cultura y educación para 
+                            construir una sociedad mejor.
+                        </p>
+                        <div class="sponsors-features">
+                            <div class="feature-item">
+                                <i class="fas fa-building"></i>
+                                <span>Empresas comprometidas con la RSE</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-university"></i>
+                                <span>Instituciones educativas aliadas</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-landmark"></i>
+                                <span>Organismos gubernamentales</span>
+                            </div>
+                        </div>
+                        <a href="../patrocinadores.html" class="sponsors-btn">
+                            <i class="fas fa-users"></i>
+                            Ver Todos Nuestros Patrocinadores
+                        </a>
+                    </div>
+                    <div class="sponsors-image animate-on-scroll" data-animation="fadeInRight">
+                        <div class="sponsors-gradient">
+                            <div class="sponsors-overlay">
+                                <i class="fas fa-handshake sponsors-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del formulario de contacto -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-header animate-on-scroll" data-animation="fadeInUp">
+                        <h2 class="section-title">INFORMACIÓN DE CONTACTO</h2>
+                        <p class="form-subtitle">
+                            ¿Estás listo para ser parte de esta transformación social? Completa el siguiente 
+                            formulario con la información de tu empresa y nos pondremos en contacto contigo 
+                            para presentarte una propuesta personalizada de patrocinio. Juntos podemos crear 
+                            un impacto duradero en nuestra comunidad.
+                        </p>
+                    </div>
+
+                    <!-- Google Forms Embed -->
+                    <div class="google-form-container animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="form-frame-wrapper">
+                            <!-- Reemplaza esta URL con la URL de tu Google Form para posibles patrocinadores -->
+                            <iframe 
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSdXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/viewform?embedded=true" 
+                                width="100%" 
+                                height="600" 
+                                frameborder="0" 
+                                marginheight="0" 
+                                marginwidth="0">
+                                Cargando…
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de testimonios -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">LO QUE DICEN NUESTROS PATROCINADORES</h2>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "Patrocinar El Sistema ha sido una de las mejores decisiones de nuestra empresa. 
+                                No solo hemos fortalecido nuestra imagen corporativa, sino que hemos sido testigos 
+                                del impacto real en la vida de los jóvenes de nuestra comunidad."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>María González</h4>
+                                    <p>Directora de RSE, Empresa ABC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "La alianza con El Sistema nos ha permitido conectar de manera auténtica con 
+                                nuestra comunidad. Los eventos y conciertos han sido espacios perfectos para 
+                                fortalecer relaciones con nuestros clientes y colaboradores."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Carlos Rodríguez</h4>
+                                    <p>Gerente General, Corporación XYZ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>
+                                "Ver cómo nuestro apoyo se traduce en sonrisas, talento desarrollado y 
+                                oportunidades para los jóvenes no tiene precio. Es una inversión que 
+                                genera valor tanto para la sociedad como para nuestra organización."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Ana Martínez</h4>
+                                    <p>Presidenta, Fundación DEF</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../img/logo-molecula.PNG" alt="Logo El Sistema" class="footer-logo-img light-mode-logo">
+                    <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" class="footer-logo-img dark-mode-logo">
+                    <div class="footer-logo-text">
+                        <p class="bold">EL SISTEMA</p>
+                        <p>Núcleo Ciudad Guayana</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Enlaces Rápidos</h3>
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../calendario.html">Calendario</a></li>
+                            <li><a href="../quienes-somos.html">Quiénes Somos</a></li>
+                            <li><a href="../donaciones.html">Donaciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> Av. Las Américas, Ciudad Guayana</li>
+                            <li><i class="fas fa-phone"></i> +58 286-123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@elsistemaciudadguayana.org</li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Síguenos</h3>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 El Sistema - Núcleo Ciudad Guayana. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Animación del logo y título en el header
+        document.addEventListener('DOMContentLoaded', function() {
+            // Funcionalidad para el botón de cambio de tema
+            const themeToggle = document.getElementById('theme-toggle');
+            const htmlElement = document.documentElement;
+            
+            themeToggle.addEventListener('click', function() {
+                if (htmlElement.classList.contains('light-mode')) {
+                    htmlElement.classList.remove('light-mode');
+                    htmlElement.classList.add('dark-mode');
+                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                } else {
+                    htmlElement.classList.remove('dark-mode');
+                    htmlElement.classList.add('light-mode');
+                    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                }
+            });
+
+            // Funcionalidad para el menú móvil
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const closeMenuButton = document.querySelector('.close-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const overlay = document.getElementById('overlay');
+            
+            hamburgerMenu.addEventListener('click', function() {
+                mobileMenu.classList.add('active');
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            overlay.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            // Funcionalidad para los dropdowns en el menú móvil
+            const dropdownToggles = document.querySelectorAll('.mobile-menu .dropdown-toggle');
+            
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const dropdownContent = this.nextElementSibling;
+                    const dropdownIcon = this.querySelector('.dropdown-icon');
+                    
+                    if (dropdownContent.style.maxHeight) {
+                        dropdownContent.style.maxHeight = null;
+                        dropdownIcon.classList.remove('rotate');
+                    } else {
+                        dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+                        dropdownIcon.classList.add('rotate');
+                    }
+                });
+            });
+
+            // Animaciones al hacer scroll
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.animate-on-scroll');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 50) {
+                        const delay = element.dataset.delay || 0;
+                        setTimeout(() => {
+                            element.classList.add('animate');
+                        }, delay);
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Ejecutar una vez al cargar la página
+        });
+    </script>
+</body>
+</html>

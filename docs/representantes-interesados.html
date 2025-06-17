@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representantes Interesados - El Sistema Ciudad Guayana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="representantes-interesados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header personalizado para Representantes Interesados -->
+    <header class="page-header-gradient">
+        <div class="container text-center header-content">
+            <!-- Logo que aparece primero -->
+            <img id="page-logo" 
+                 src="../img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+                 alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+                 loading="lazy" 
+                 class="page-logo">
+            
+            <!-- Título que aparece después -->
+            <div id="page-title" class="page-title-container">
+                <h1 class="page-title-line1">REPRESENTANTES INTERESADOS</h1>
+                <h2 class="page-title-line2">Descubre el futuro musical de tu hijo</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../calendario.html">CALENDARIO</a></li>
+                        <li><a href="../boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="../agrupaciones/agrupaciones.html" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="../agrupaciones/alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="../agrupaciones/simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="../agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        <li><a href="../agrupaciones/orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="../agrupaciones/orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#galeria" class="dropdown-toggle">GALERÍA AUDIOVISUAL</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="../galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../donaciones.html">DONACIONES</a></li>
+                        <li><a href="../patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="../patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="../comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="../noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de logo y redes sociales -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="../img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Sección de bienvenida -->
+        <section class="welcome-section">
+            <div class="container">
+                <div class="welcome-content animate-on-scroll" data-animation="fadeIn">
+                    <h2 class="section-title">¡BIENVENIDOS REPRESENTANTES!</h2>
+                    <p class="welcome-text">
+                        ¿Estás interesado en que tu hijo forme parte de El Sistema Ciudad Guayana? 
+                        Aquí encontrarás toda la información necesaria sobre nuestros programas musicales, 
+                        requisitos de inscripción y los beneficios que la educación musical puede aportar 
+                        al desarrollo integral de tu hijo. La música no solo desarrolla habilidades artísticas, 
+                        sino que también fortalece la disciplina, la concentración y los valores sociales.
+                    </p>
+                    <div class="welcome-features">
+                        <div class="feature-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Educación Integral</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span>Trabajo en Equipo</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Educación Gratuita</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de agrupaciones destacadas -->
+        <section class="featured-groups-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">NUESTROS PROGRAMAS MUSICALES</h2>
+                <p class="programs-subtitle animate-on-scroll" data-animation="fadeInUp">
+                    Conoce los diferentes programas disponibles para tu hijo según su edad e intereses
+                </p>
+                
+                <div class="groups-grid">
+                    <div class="group-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="group-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Iniciación Musical">
+                            <div class="group-tag">3-6 años</div>
+                        </div>
+                        <div class="group-content">
+                            <h3 class="group-title">Iniciación Musical</h3>
+                            <p class="group-description">
+                                Primer acercamiento a la música a través del juego, el canto y 
+                                la exploración de instrumentos de percusión menor. Desarrollo de 
+                                habilidades rítmicas y auditivas básicas.
+                            </p>
+                            <div class="group-features">
+                                <span><i class="fas fa-clock"></i> 2 horas semanales</span>
+                                <span><i class="fas fa-music"></i> Percusión y canto</span>
+                            </div>
+                            <a href="../agrupaciones/iniciacion-musical.html" class="group-link">Conocer más</a>
+                        </div>
+                    </div>
+
+                    <div class="group-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="group-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Programa Alma Llanera">
+                            <div class="group-tag">7+ años</div>
+                        </div>
+                        <div class="group-content">
+                            <h3 class="group-title">Programa Alma Llanera</h3>
+                            <p class="group-description">
+                                Formación en música tradicional venezolana con instrumentos 
+                                como cuatro, maracas, bandola y arpa llanera. Conexión con 
+                                nuestras raíces culturales.
+                            </p>
+                            <div class="group-features">
+                                <span><i class="fas fa-clock"></i> 4 horas semanales</span>
+                                <span><i class="fas fa-guitar"></i> Instrumentos tradicionales</span>
+                            </div>
+                            <a href="../agrupaciones/alma-llanera.html" class="group-link">Conocer más</a>
+                        </div>
+                    </div>
+
+                    <div class="group-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="group-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Programa Simón Bolívar">
+                            <div class="group-tag">7+ años</div>
+                        </div>
+                        <div class="group-content">
+                            <h3 class="group-title">Programa Simón Bolívar</h3>
+                            <p class="group-description">
+                                Formación orquestal con instrumentos sinfónicos: violín, viola, 
+                                violonchelo, contrabajo, vientos y percusión. Preparación para 
+                                orquestas juveniles y profesionales.
+                            </p>
+                            <div class="group-features">
+                                <span><i class="fas fa-clock"></i> 6 horas semanales</span>
+                                <span><i class="fas fa-music"></i> Instrumentos sinfónicos</span>
+                            </div>
+                            <a href="../agrupaciones/simon-bolivar.html" class="group-link">Conocer más</a>
+                        </div>
+                    </div>
+
+                    <div class="group-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                        <div class="group-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Programa Coral">
+                            <div class="group-tag">7+ años</div>
+                        </div>
+                        <div class="group-content">
+                            <h3 class="group-title">Programa Coral</h3>
+                            <p class="group-description">
+                                Desarrollo de la voz a través del canto coral, técnica vocal 
+                                y repertorio diverso nacional e internacional. Formación de 
+                                coros infantiles y juveniles.
+                            </p>
+                            <div class="group-features">
+                                <span><i class="fas fa-clock"></i> 4 horas semanales</span>
+                                <span><i class="fas fa-microphone"></i> Técnica vocal</span>
+                            </div>
+                            <a href="../agrupaciones/programa-coral.html" class="group-link">Conocer más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Llamada a la acción para usar el chatbot -->
+                <div class="groups-cta animate-on-scroll" data-animation="fadeInUp" data-delay="500">
+                    <h3>¿TIENES PREGUNTAS ESPECÍFICAS?</h3>
+                    <p>
+                        Nuestro asistente virtual <strong>TchaiBotsky</strong> está disponible 24/7 para responder 
+                        todas tus dudas sobre programas, horarios, requisitos de inscripción y mucho más. 
+                        ¡Pregúntale lo que necesites saber!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del formulario de contacto -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info animate-on-scroll" data-animation="fadeInLeft">
+                        <h2 class="section-title">¿NECESITAS MÁS INFORMACIÓN?</h2>
+                        <p class="contact-description">
+                            Si después de conocer nuestros programas y hablar con TchaiBotsky aún tienes dudas 
+                            específicas o deseas programar una visita a nuestras instalaciones, completa el 
+                            siguiente formulario y nos pondremos en contacto contigo.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Tiempo de respuesta</h4>
+                                    <p>Te contactaremos en un plazo máximo de 48 horas</p>
+                                    <span>Lunes a Viernes: 8:00 AM - 5:00 PM</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Visitas programadas</h4>
+                                    <p>Agenda una visita a nuestras instalaciones</p>
+                                    <span>Conoce nuestros espacios y profesores</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h4>Evaluación musical</h4>
+                                    <p>Programa la evaluación de tu hijo</p>
+                                    <span>Proceso gratuito y sin compromiso</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="google-form-container animate-on-scroll" data-animation="fadeInRight">
+                        <h3>FORMULARIO DE CONTACTO</h3>
+                        <p>Completa tus datos y nos pondremos en contacto contigo</p>
+                        
+                        <div class="form-embed">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNwa1DO5dXVLjSKRYsHTo7MH5QXQdwuMzJ1sMeM9U77s7X2g/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Formando músicos y ciudadanos integrales a través de la educación musical gratuita y de calidad.
+                    </p>
+                </div>
+
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="../quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="400">
+                        <h3>PROGRAMAS</h3>
+                        <ul>
+                            <li><a href="../agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                            <li><a href="../agrupaciones/alma-llanera.html">Alma Llanera</a></li>
+                            <li><a href="../agrupaciones/simon-bolivar.html">Simón Bolívar</a></li>
+                            <li><a href="../agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>SOY UN...</h3>
+                    <div class="you-are-buttons">
+                        <a href="representantes-interesados.html" class="you-are-btn">Representante interesado</a>
+                        <a href="#eventos" class="you-are-btn">Organizador de evento</a>
+                        <a href="../patrocinadores.html" class="you-are-btn">Patrocinador</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a href="#" class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="/placeholder.svg?height=60&width=120" alt="Logo Patrocinador 1">
+                    </a>
+                    <a href="#" class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="/placeholder.svg?height=60&width=120" alt="Logo Patrocinador 2">
+                    </a>
+                    <a href="#" class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="/placeholder.svg?height=60&width=120" alt="Logo Patrocinador 3">
+                    </a>
+                    <a href="#" class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="/placeholder.svg?height=60&width=120" alt="Logo Patrocinador 4">
+                    </a>
+                    <a href="#" class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="/placeholder.svg?height=60&width=120" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+            <div class="thank-you animate-on-scroll" data-animation="fadeInUp">
+                <p>GRACIAS POR SU VISITA</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../chatbot-button.js"></script>
+    <script>
+        // Función para activar el chatbot
+        function toggleChatbot() {
+            // Esta función debería activar el chatbot existente
+            // Asumiendo que existe una función global para abrir el chatbot
+            if (typeof openChatbot === 'function') {
+                openChatbot();
+            } else {
+                // Fallback: mostrar mensaje
+                alert('¡Hola! Soy TchaiBotsky, tu asistente virtual. Pregúntame sobre nuestros programas musicales, horarios, requisitos de inscripción y más. ¡Estoy aquí para ayudarte!');
+            }
+        }
+    </script>
+</body>
+</html>

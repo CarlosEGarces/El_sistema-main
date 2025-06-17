@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sistema Ciudad Guayana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header principal con video -->
+    <header class="header-gradient">
+        <div class="video-container">
+            <video id="header-video" muted playsinline>
+                <source src="videos/video_saludo.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        <div class="video-overlay"></div>
+        </div>
+        <div class="container text-center header-content">
+            <img id="header-logo" src="img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" alt="Logo 50 Aniversario El Sistema Ciudad Guayana" loading="lazy" style="opacity: 0; transform: scale(0.8); transition: all 1s ease;">
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="agrupaciones/alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="agrupaciones/simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        <li><a href="agrupaciones/orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="agrupaciones/orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle">GALERÍA AUDIOVISUAL</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="donaciones.html">DONACIONES</a></li>
+                        <li><a href="patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de logo y redes sociales - ACTUALIZADA: Más minimalista -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/elsistemaciudadguayana" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+
+            <!-- Carrusel de imágenes - ACTUALIZADO: Pantalla completa con flechas transparentes -->
+            <div class="carousel-wrapper">
+                <figure class="carousel-container animate-on-scroll" data-animation="zoomIn" aria-label="Galería de imágenes">
+                    <div class="carousel">
+                        <div class="carousel-slide active">
+                            <img src="img/index_1.jpg" alt="Orquesta en concierto" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/index_2.jpg" alt="Músicos ensayando" loading="lazy">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/index_3.JPG" alt="Director de orquesta" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="carousel-button prev" aria-label="Imagen anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-button next" aria-label="Imagen siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-dots" role="tablist">
+                        <span class="dot active" data-index="0" role="tab" aria-selected="true" aria-label="Imagen 1"></span>
+                        <span class="dot" data-index="1" role="tab" aria-selected="false" aria-label="Imagen 2"></span>
+                        <span class="dot" data-index="2" role="tab" aria-selected="false" aria-label="Imagen 3"></span>
+                    </div>
+                </figure>
+            </div>
+
+        <!-- Sección de misión -->
+        <section class="mission-section" id="acerca">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">MISIÓN</h2>
+                <div class="content-wrapper mission-content">
+                    <div class="mission-text animate-on-scroll" data-animation="fadeInLeft">
+                        <p>
+                            Existimos para hacer de la música, del contacto con los instrumentos musicales, del estudio y los ensayos, 
+                            de los conciertos y los aplausos, y de las giras y logros, una práctica diaria, constante y posible para 
+                            toda la población venezolana y del mundo.
+                        </p>
+                        <p>
+                            Somos un movimiento, una idea, un sueño que se formó en orquestas, coros y agrupaciones con disciplina y 
+                            excelencia, que creció en miles de niños creando nuevos caminos y la posibilidad de un mejor futuro.
+                        </p>
+                        <p>
+                            Somos el más grande proyecto artístico-social de educación musical en el mundo, cuyo único norte es 
+                            brindar acceso a la música a todas las personas; y convertirla en una herramienta que transforme 
+                            sociedades y nos mueva hacia el futuro.
+                        </p>
+                    </div>
+                    <div class="mission-image animate-on-scroll" data-animation="fadeInRight">
+                        <img src="img/index_4.jpg" alt="Orquesta en concierto" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: Agrupaciones (reemplaza la sección de conciertos) -->
+        <section class="agrupaciones-section" id="agrupaciones">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">NUESTRAS AGRUPACIONES</h2>
+                <div class="agrupaciones-grid">
+                    <!-- Iniciación Musical -->
+                    <article class="agrupacion-card magenta-gradient animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>INICIACIÓN MUSICAL</h3>
+                            <p>Primeros pasos en el ámbito musical para niños desde los 4 años de edad.</p>
+                            <a href="agrupaciones/iniciacion-musical.html" class="btn white">CONOCER MÁS</a>
+                        </div>
+                        <div class="card-decoration"></div>
+                    </article>
+
+                    <!-- Programa Alma Llanera -->
+                    <article class="agrupacion-card blue-gradient animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-guitar"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>PROGRAMA ALMA LLANERA</h3>
+                            <p>Preservación, enseñanza y difusión de la música tradicional venezolana.</p>
+                            <a href="agrupaciones/alma-llanera.html" class="btn white">CONOCER MÁS</a>
+                        </div>
+                        <div class="card-decoration"></div>
+                    </article>
+
+                    <!-- Programa Simón Bolívar -->
+                    <article class="agrupacion-card green-gradient animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>PROGRAMA SIMÓN BOLÍVAR</h3>
+                            <p>Práctica colectiva de la música en las escuelas del subsistema de educación básica.</p>
+                            <a href="agrupaciones/simon-bolivar.html" class="btn white">CONOCER MÁS</a>
+                        </div>
+                        <div class="card-decoration"></div>
+                    </article>
+
+                    <!-- Programa Coral -->
+                    <article class="agrupacion-card orange-gradient animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>PROGRAMA CORAL</h3>
+                            <p>Incorporación de niños, niñas y jóvenes que usan la voz como instrumento.</p>
+                            <a href="agrupaciones/programa-coral.html" class="btn white">CONOCER MÁS</a>
+                        </div>
+                        <div class="card-decoration"></div>
+                    </article>
+
+                    <!-- Orquesta Sinfónica Juvenil -->
+                    <article class="agrupacion-card purple-gradient animate-on-scroll" data-animation="fadeInUp" data-delay="500">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>ORQUESTA SINFÓNICA JUVENIL</h3>
+                            <p>Plataforma de alto rendimiento musical integrada por jóvenes formados en el programa académico.</p>
+                            <a href="agrupaciones/orquesta-juvenil.html" class="btn white">CONOCER MÁS</a>
+                        </div>
+                        <div class="card-decoration"></div>
+                    </article>
+
+                    <!-- Orquesta Sinfónica Regional -->
+                    <article class="agrupacion-card darkblue-gradient animate-on-scroll" data-animation="fadeInUp" data-delay="600">
+                        <div class="card-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>ORQUESTA SINFÓNICA REGIONAL</h3>
+                            <p>Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar" del Estado Bolívar.</p>
+                            <a href="agrupaciones/orquesta-regional.html" class="btn white">CONOCER MÁS</a>
+                        </div>
+                        <div class="card-decoration"></div>
+                    </article>
+                </div>
+
+                <div class="text-center view-more animate-on-scroll" data-animation="fadeIn" data-delay="700">
+                    <a href="calendario.html" class="green-text">VER LOS PRÓXIMOS CONCIERTOS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección sobre la orquesta -->
+        <section class="orchestra-section" id="musicos">
+            <div class="container">
+                <div class="content-wrapper">
+                    <header class="section-header animate-on-scroll" data-animation="fadeIn">
+                        <h2>SOBRE NUESTRO</h2>
+                        <h2>NÚCLEO</h2>
+                    </header>
+
+                    <div class="two-columns">
+                        <div class="column animate-on-scroll" data-animation="fadeInLeft">
+                            <p>
+                                El Núcleo Ciudad Guayana es parte del reconocido Sistema Nacional de Orquestas y Coros Juveniles
+                                 e Infantiles de Venezuela, un proyecto artístico-social que transforma vidas a través de la música. 
+                                 Desde su fundación en 1992, ha sido un espacio de formación, inspiración y crecimiento para jóvenes 
+                                 talentos, promoviendo la práctica musical colectiva como un medio de integración y desarrollo.
+                            </p>
+
+                            <div class="gradient-bar" aria-hidden="true"></div>
+                        </div>
+
+                        <div class="column animate-on-scroll" data-animation="fadeInRight">
+                            <p>
+                                Este núcleo ha sido testigo del progreso de generaciones de músicos, brindándoles la oportunidad de 
+                                interpretar repertorios de alto nivel y compartir escenario con reconocidos artistas nacionales e 
+                                internacionales. Bajo la dirección de maestros comprometidos, la orquesta ha fortalecido su identidad y 
+                                su impacto en la comunidad, participando en eventos históricos y representando con orgullo el talento guayanés.
+                            </p>
+                            <p> 
+                                Más que un espacio de enseñanza, el Núcleo Ciudad Guayana es un símbolo de unión, cultura y excelencia musical, 
+                                donde la pasión por la música se convierte en motor de cambio.
+                            </p>
+
+                            <div class="text-right">
+                                <a href="quienes-somos.html" class="know-more-link">CONOCER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Donaciones -->
+        <section class="donations-section" id="donaciones">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">DONACIONES</h2>
+        
+                <article class="content-wrapper donations-content">
+                    <figure class="donations-image animate-on-scroll" data-animation="fadeInLeft">
+                        <img src="img/index_5.JPG" alt="Orquesta en concierto" loading="lazy">
+                    </figure>
+        
+                    <div class="donations-info animate-on-scroll" data-animation="fadeInRight">
+                        <h3>Apoya el futuro de la música</h3>
+                        <p class="donations-tagline">Tu contribución transforma vidas a través de la música</p>
+        
+                        <p>
+                            Cada donación que realizas ayuda a proporcionar instrumentos, educación musical y oportunidades 
+                            para niños y jóvenes que de otra manera no tendrían acceso a estos recursos.
+                        </p>
+        
+                        <p>
+                            El Sistema ha demostrado que la música es una poderosa herramienta de transformación social, 
+                            capaz de rescatar a los niños y jóvenes de situaciones vulnerables y ofrecerles un futuro lleno 
+                            de posibilidades.
+                        </p>
+        
+                        <div class="donation-options">
+                            <a href="donaciones.html" class="btn pink donate-btn">DONE AQUÍ</a>
+                        </div>
+        
+                        <div class="donation-impact">
+                            <div class="impact-item">
+                                <span class="impact-number">1,000+</span>
+                                <span class="impact-text">Horas de formación musical impartida</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-number">500+</span>
+                                <span class="impact-text">Niños beneficiados</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-number">20+</span>
+                                <span class="impact-text">Comunidades alcanzadas</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Nueva sección de ubicación con mapa -->
+        <section class="map-section" id="ubicacion">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">NUESTRA UBICACIÓN</h2>
+                <p class="text-center animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                    Visítanos en el Centro Empresarial Alta Vista, Edificio CVG, Planta Baja, Ciudad Guayana.
+                </p>
+                <div class="map-container animate-on-scroll" data-animation="fadeIn" data-delay="400">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.0766683518145!2d-62.73063872647985!3d8.29516920004703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbfbd6c5f3f45b%3A0x7de27c6e47b1f291!2sOrquesta%20Sinfonica%20Juvenil%20e%20Infantil%20de%20Cdad.%20Guayana!5e0!3m2!1ses!2sve!4v1749788011291!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Sección izquierda: Logo y descripción -->
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Disfruta de los mejores conciertos de El Sistema Núcleo Ciudad Guayana.
+                    </p>
+                </div>
+
+                <!-- Sección central: Enlaces institucionales y online -->
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección derecha: "TÚ ERES..." -->
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>QUIERO...</h3>
+                    <div class="you-are-buttons">
+                        <a href="organizador-eventos.html" class="you-are-btn">Organizar un evento</a>
+                        <a href="posibles-patrocinadores.html" class="you-are-btn">Ser un patrocinante</a>
+                        <a href="buzon-sugerencias.html" class="you-are-btn">Dejar una sugerencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de patrocinadores -->
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="img/logo_patrocinador_1.png" alt="Logo Patrocinador 1">
+                    </a>
+                    <a  class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="img/logo_patrocinador_9.png" alt="Logo Patrocinador 2">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="img/logo_patrocinador_3.png" alt="Logo Patrocinador 3">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="img/logo_patrocinador_4.png" alt="Logo Patrocinador 4">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_5.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_6.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_7.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_8.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_2.png" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot-button.js"></script>
+    <script src="popup-inscripciones.js"></script>
+    <script>
+        // Escuchar mensajes del chatbot
+        window.addEventListener("message", (event) => {
+            if (event.data === "chatbotOpened") {
+                console.log("Chatbot abierto");
+            } else if (event.data === "chatbotClosed") {
+                console.log("Chatbot cerrado");
+            }
+        });
+    </script>
+</body>
+</html>

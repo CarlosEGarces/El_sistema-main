@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - El Sistema Ciudad Guayana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="quienes-somos-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header principal con animación de logo a título -->
+    <header class="page-header-gradient">
+    <div class="container text-center header-content">
+        <!-- Logo que aparece primero y luego desaparece -->
+        <img id="page-logo" 
+             src="img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+             alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+             loading="lazy" 
+             class="page-logo">
+        
+        <!-- Título que aparece después del logo -->
+        <div id="page-title" class="page-title-container">
+            <h1 class="page-title-line1">QUIÉNES SOMOS</h1>
+            <h2 class="page-title-line2">NUESTRA HISTORIA Y MISIÓN</h2>
+        </div>
+    </div>
+    </header>
+
+<!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="agrupaciones/alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="agrupaciones/simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        <li><a href="agrupaciones/orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="agrupaciones/orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">GALERÍA AUDIOVISUAL</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="donaciones.html">DONACIONES</a></li>
+                        <li><a href="patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de logo y redes sociales - ACTUALIZADA: Más minimalista -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/elsistemaciudadguayana" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Sección de Historia -->
+        <section class="historia">
+    <div class="container">
+        <div class="section-header animate-on-scroll" data-animation="fadeIn">
+            <h2 class="section-title">NUESTRA HISTORIA</h2>
+            <div class="separator"></div>
+            <p class="section-subtitle">Más de 30 años transformando vidas a través de la música</p>
+        </div>
+        <div class="historia-content">
+            <div class="historia-text animate-on-scroll" data-animation="fadeInLeft">
+                <div class="historia-highlight">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Fundada en 1992</span>
+                </div>
+                <p>La Orquesta Sinfónica Infantil y Juvenil de Ciudad Guayana nació en <strong>Junio de 1992</strong> bajo la dirección de su fundador, el <strong>Maestro Ennio Palumbi</strong>. Junto a un poco menos de 50 integrantes, formó lo que a futuro se convirtieron en los pilares fundamentales para el crecimiento y desarrollo de la institución.</p>
+                
+                <div class="historia-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">33</div>
+                        <div class="stat-label">Años de Historia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50</div>
+                        <div class="stat-label">Estudiantes Iniciales</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Vidas Transformadas</div>
+                    </div>
+                </div>
+                
+                <p>Desde su fundación, hemos estado presentes en los <strong>eventos más importantes</strong> de Ciudad Guayana, consolidándonos como una institución cultural de primer nivel que ha participado en inauguraciones históricas y ha compartido escenario con artistas de renombre nacional e internacional.</p>
+            </div>
+            <div class="historia-timeline animate-on-scroll" data-animation="fadeInRight">
+                <h3 class="timeline-title">Momentos Históricos</h3>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>1992</h4>
+                        <p>Fundación por el Maestro Ennio Palumbi</p>
+                        <span class="timeline-detail">Inicio con menos de 50 estudiantes</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>1992-2000</h4>
+                        <p>Eventos Emblemáticos</p>
+                        <span class="timeline-detail">Concha Acústica, Macagua II, Estadio La Ceiba</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2004</h4>
+                        <p>Consolidación Artística</p>
+                        <span class="timeline-detail">Repertorio clásico de alto nivel</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2004-2010</h4>
+                        <p>Proyectos Nacionales</p>
+                        <span class="timeline-detail">Caruachi y II Puente Orinoco</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2023</h4>
+                        <p>Nueva Dirección</p>
+                        <span class="timeline-detail">Gregman Rodríguez Jiménez</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección de Misión y Visión -->
+        <section class="mision-vision">
+            <div class="container">
+                <div class="mision-vision-grid">
+                    <div class="mision animate-on-scroll" data-animation="fadeInLeft">
+                        <div class="section-header">
+                            <h2>Misión</h2>
+                            <div class="separator"></div>
+                        </div>
+                        <p>Formar integralmente a niños y jóvenes de Ciudad Guayana a través de la educación musical de excelencia, desarrollando sus capacidades artísticas y humanas, contribuyendo al enriquecimiento cultural de nuestra región y formando ciudadanos comprometidos con los valores de disciplina, trabajo en equipo y excelencia artística.</p>
+                        <div class="icon-container">
+                            <i class="fas fa-music"></i>
+                        </div>
+                    </div>
+                    <div class="vision animate-on-scroll" data-animation="fadeInRight">
+                        <div class="section-header">
+                            <h2>Visión</h2>
+                            <div class="separator"></div>
+                        </div>
+                        <p>Consolidarnos como la principal institución de formación musical de Ciudad Guayana y referente en Venezuela, manteniendo nuestro compromiso con la excelencia artística y la formación integral de nuestros estudiantes, contribuyendo significativamente al desarrollo cultural y social de la región guayanesa.</p>
+                        <div class="icon-container">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Valores -->
+        <section class="valores">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">NUESTROS VALORES</h2>
+                <div class="valores-grid">
+                    <div class="valor-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="valor-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Solidaridad</h3>
+                        <p>Promovemos el apoyo mutuo y el sentido de comunidad entre nuestros estudiantes y familias.</p>
+                    </div>
+                    <div class="valor-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="valor-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Excelencia</h3>
+                        <p>Buscamos la máxima calidad en la formación musical y el desarrollo personal de nuestros estudiantes.</p>
+                    </div>
+                    <div class="valor-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="valor-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Trabajo en equipo</h3>
+                        <p>Fomentamos la colaboración y el esfuerzo colectivo como base fundamental de la música orquestal.</p>
+                    </div>
+                    <div class="valor-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                        <div class="valor-icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <h3>Disciplina</h3>
+                        <p>Cultivamos el esfuerzo constante y la perseverancia como camino hacia la excelencia musical.</p>
+                    </div>
+                    <div class="valor-card animate-on-scroll" data-animation="fadeInUp" data-delay="500">
+                        <div class="valor-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Pasión</h3>
+                        <p>Transmitimos el amor por la música y el entusiasmo por el arte como motor de transformación.</p>
+                    </div>
+                    <div class="valor-card animate-on-scroll" data-animation="fadeInUp" data-delay="600">
+                        <div class="valor-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Compromiso</h3>
+                        <p>Asumimos la responsabilidad de nuestra misión educativa y nuestro impacto social en la comunidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Directores y Artistas Destacados -->
+        <section class="equipo">
+    <div class="container">
+        <div class="section-header animate-on-scroll" data-animation="fadeIn">
+            <h2 class="section-title">NUESTROS LÍDERES Y COLABORADORES</h2>
+            <div class="separator"></div>
+            <p class="section-subtitle">Directores que han forjado nuestra excelencia musical</p>
+        </div>
+        
+        <!-- Fundador El Sistema -->
+        <div class="leadership-section">
+            <h3 class="subsection-title">Creación de El Sistema</h3>
+            <div class="current-director">
+                <div class="director-card animate-on-scroll" data-animation="fadeInUp">
+                    <img src="img/quienes_1.jpg" alt="José Antonio Abreu">
+                    <div class="director-info">
+                        <h4>José Antonio Abreu</h4>
+                        <p class="director-title">Fundador de El Sistema</p>
+                        <p class="director-period">1975</p>
+                        <p class="director-bio">El Maestro José Antonio Abreu fue el visionario venezolano que, en 1975, fundó El Sistema Nacional de Orquestas y Coros Juveniles e Infantiles de Venezuela. Su mayor logro fue crear un modelo único de educación musical colectiva, que permitió a miles de niños y jóvenes, sin distinción social, acceder a la formación artística y encontrar en la música una vía de integración y superación personal.</p>
+                        <p class="director-bio">Bajo el liderazgo del Maestro Abreu, El Sistema se consolidó como el proyecto artístico-social de educación musical más grande del mundo, reconocido internacionalmente por su impacto en la transformación social y cultural. Su legado vive en cada orquesta y coro que forman parte de este movimiento, que ha inspirado iniciativas similares en numerosos países.</p>
+                        <div class="director-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Visionario</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fundación Núcleo -->
+        <div class="leadership-section">
+            <h3 class="subsection-title">Fundación del Núcleo Ciudad Guayana</h3>
+            <div class="current-director">
+                <div class="director-card animate-on-scroll" data-animation="fadeInUp">
+                    <img src="img/quienes_2.JPG" alt="Ennio Palumbi">
+                    <div class="director-info">
+                        <h4>Ennio Palumbi</h4>
+                        <p class="director-title">Fundador del Núcleo Ciudad Guayana</p>
+                        <p class="director-period">1992</p>
+                        <p class="director-bio">Ennio Palumbi fue el visionario fundador de El Sistema Ciudad Guayana, dedicando su vida a llevar la educación musical a los niños y jóvenes de la región. Su pasión por la música y su compromiso con la comunidad sentaron las bases para lo que hoy es una institución fundamental en el desarrollo cultural de Ciudad Guayana.</p>
+                        <p class="director-bio">Bajo su liderazgo, El Sistema Ciudad Guayana comenzó su trayectoria de excelencia, formando a generaciones de músicos y creando un impacto social significativo a través del poder transformador de la música.</p>
+                        <div class="director-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Fundador</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dirección Actual -->
+        <div class="leadership-section">
+            <h3 class="subsection-title">Dirección Actual</h3>
+            <div class="current-director">
+                <div class="director-card animate-on-scroll" data-animation="fadeInUp">
+                    <img src="img/quienes_3.jpg" alt="Gregman Rodríguez Jiménez">
+                    <div class="director-info">
+                        <h4>Gregman Rodríguez Jiménez</h4>
+                        <p class="director-title">Director General</p>
+                        <p class="director-period">Desde Junio 2023</p>
+                        <p class="director-bio">Músico sinfónico venezolano que asumió la dirección del Núcleo Ciudad Guayana en junio de 2023. Inició su desarrollo y formación musical en esta misma orquesta, siendo parte de la primera generación de la Orquesta Sinfónica Infantil de Ciudad Guayana.</p>
+                        <div class="director-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Colaboraciones Destacadas -->
+        <div class="collaborations-section">
+            <div class="collaboration-grid">
+                <div class="collaboration-category animate-on-scroll" data-animation="fadeInLeft">
+                    <div class="category-header">
+                        <i class="fas fa-baton"></i>
+                        <h4>Directores Invitados</h4>
+                    </div>
+                    <div class="collaborators-list">
+                        <span class="collaborator">Rodolfo Sanglimbeni</span>
+                        <span class="collaborator">Aldemaro Romero</span>
+                        <span class="collaborator">Inocente Carreño</span>
+                        <span class="collaborator">Isabel Palacios</span>
+                        <span class="collaborator">Mario Benzecry</span>
+                        <span class="collaborator">Rubén Capriles</span>
+                        <span class="collaborator">Sebastian Rosenberg</span>
+                        <span class="collaborator">Rubén Cova</span>
+                    </div>
+                </div>
+                
+                <div class="collaboration-category animate-on-scroll" data-animation="fadeInRight">
+                    <div class="category-header">
+                        <i class="fas fa-microphone"></i>
+                        <h4>Artistas Invitados</h4>
+                    </div>
+                    <div class="collaborators-list">
+                        <span class="collaborator featured">Ricardo Montaner</span>
+                        <span class="collaborator featured">Simón Díaz</span>
+                        <span class="collaborator">Ensamble Gurrufío</span>
+                        <span class="collaborator">Ensamble enCayapa</span>
+                        <span class="collaborator">Serenata Guayanesa</span>
+                        <span class="collaborator">Cayito Aponte</span>
+                        <span class="collaborator">Floria Márquez</span>
+                        <span class="collaborator">Rosario Prieto</span>
+                        <span class="collaborator">Judith Jaimes</span>
+                        <span class="collaborator">Carlos Duarte</span>
+                        <span class="collaborator">Jorge Celedón</span>
+                        <span class="collaborator">Cheo Feliciano</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información de Contacto -->
+        <div class="contact-info animate-on-scroll" data-animation="fadeIn">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Nuestra Sede</h4>
+                </div>
+                <p><strong>Dirección:</strong> Av. Guayana, Centro Empresarial Centro Alta Vista (Antiguo Maxy's), P.B., Alta Vista, Puerto Ordaz, Municipio Caroní, Ciudad Guayana, Estado Bolívar</p>
+                <p><strong>Contacto:</strong> <a href="mailto:nucleo.ciudadguayana@elsistema.org.ve">nucleo.ciudadguayana@elsistema.org.ve</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección de Logros y Participaciones -->
+        <section class="reconocimientos">
+    <div class="container">
+        <div class="section-header animate-on-scroll" data-animation="fadeIn">
+            <h2 class="section-title">LOGROS Y PARTICIPACIONES DESTACADAS</h2>
+            <div class="separator"></div>
+            <p class="section-subtitle">Presentes en los momentos más importantes de Ciudad Guayana</p>
+        </div>
+        
+        <div class="achievements-grid">
+            <div class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                <div class="achievement-icon">
+                    <i class="fas fa-theater-masks"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Concha Acústica</h3>
+                    <p class="achievement-location">Malecón de San Félix</p>
+                    <p class="achievement-description">Participación en la inauguración de este emblemático espacio cultural de la ciudad.</p>
+                </div>
+            </div>
+            
+            <div class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                <div class="achievement-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Central Hidroeléctrica Macagua II</h3>
+                    <p class="achievement-location">Proyecto Nacional</p>
+                    <p class="achievement-description">Evento de inauguración de una de las obras de ingeniería más importantes del país.</p>
+                </div>
+            </div>
+            
+            <div class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                <div class="achievement-icon">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Estadio La Ceiba</h3>
+                    <p class="achievement-location">Ciudad Guayana</p>
+                    <p class="achievement-description">Ceremonia de inauguración del principal estadio de fútbol de la región.</p>
+                </div>
+            </div>
+            
+            <div class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                <div class="achievement-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Central Hidroeléctrica Caruachi</h3>
+                    <p class="achievement-location">Río Caroní</p>
+                    <p class="achievement-description">Participación en la inauguración de esta importante obra de infraestructura energética.</p>
+                </div>
+            </div>
+            
+            <div class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="500">
+                <div class="achievement-icon">
+                    <i class="fas fa-bridge"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>II Puente sobre el Río Orinoco</h3>
+                    <p class="achievement-location">Conexión Nacional</p>
+                    <p class="achievement-description">Ceremonia de inauguración de esta vital conexión entre el norte y sur del país.</p>
+                </div>
+            </div>
+            
+            <div class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="600">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Repertorio de Excelencia</h3>
+                    <p class="achievement-location">Desde 2004</p>
+                    <p class="achievement-description">Ejecución de obras del más alto nivel del repertorio clásico mundial.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Sección izquierda: Logo y descripción -->
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Disfruta de los mejores conciertos de El Sistema Núcleo Ciudad Guayana.
+                    </p>
+                </div>
+
+                <!-- Sección central: Enlaces institucionales y online -->
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección derecha: "TÚ ERES..." -->
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>QUIERO...</h3>
+                    <div class="you-are-buttons">
+                        <a href="organizador-eventos.html" class="you-are-btn">Organizar un evento</a>
+                        <a href="posibles-patrocinadores.html" class="you-are-btn">Ser un patrocinante</a>
+                        <a href="buzon-sugerencias.html" class="you-are-btn">Dejar una sugerencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de patrocinadores -->
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="img/logo_patrocinador_1.png" alt="Logo Patrocinador 1">
+                    </a>
+                    <a  class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="img/logo_patrocinador_9.png" alt="Logo Patrocinador 2">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="img/logo_patrocinador_3.png" alt="Logo Patrocinador 3">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="img/logo_patrocinador_4.png" alt="Logo Patrocinador 4">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_5.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_6.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_7.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_8.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_2.png" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="quienes-somos.js"></script>
+    <script src="chatbot-button.js"></script>
+</body>
+</html>

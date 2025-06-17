@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - El Sistema Núcleo Ciudad Guayana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="galeria-audiovisual.css">
+    <link rel="stylesheet" href="galeria-imagenes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header principal con animación de logo a título -->
+    <header class="page-header-gradient">
+    <div class="container text-center header-content">
+        <!-- Logo que aparece primero y luego desaparece -->
+        <img id="page-logo" 
+             src="../img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+             alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+             loading="lazy" 
+             class="page-logo">
+        
+        <!-- Título que aparece después del logo -->
+        <div id="page-title" class="page-title-container">
+            <h1 class="page-title-line1">GALERÍA DE IMÁGENES</h1>
+            <h2 class="page-title-line2">RECORDEMOS NUESTROS MEJORES MOMENTOS</h2>
+        </div>
+    </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../calendario.html">CALENDARIO</a></li>
+                        <li><a href="../boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                 <li class="nav-item dropdown">
+                    <a href="../agrupaciones/agrupaciones.html" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="../agrupaciones/alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="../agrupaciones/simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="../agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        <li><a href="../agrupaciones/orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="../agrupaciones/orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#galeria" class="dropdown-toggle">GALERIA AUDIOVISUAL</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../galeria/galeria-imagenes.html">GALERIA IMÁGENES</a></li>
+                        <li><a href="../galeria/galeria-videos.html">GALERÍA VIDEOS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../donaciones.html">DONACIONES</a></li>
+                        <li><a href="../patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="../patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="../comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="../noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de logo y redes sociales -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="../img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/elsistemaciudadguayana" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Vista de eventos/álbumes -->
+        <section id="events-view" class="events-gallery-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">EVENTOS Y MOMENTOS ESPECIALES</h2>
+                <p class="section-subtitle animate-on-scroll" data-animation="fadeInUp">Explora nuestros álbumes de fotos organizados por eventos</p>
+                
+                <div class="events-grid">
+                    <!-- Evento 1 -->
+                    <div class="event-card animate-on-scroll" data-animation="fadeInUp" data-delay="100" data-event="ensayo-2025">
+                        <div class="event-image">
+                            <img src="../img/evento1.jpg" alt="Concierto de Gala 2023">
+                            <div class="event-overlay">
+                                <div class="photo-count">
+                                    <i class="fas fa-images"></i>
+                                    <span>11 fotos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>Ensayo y Grabación con Músicos Seleccionados Para la Infantil y Juvenil Nacional</h3>
+                            <p class="event-date">Junio 2025</p>
+                            <p class="event-description">Un encuentro preparatorio donde jóvenes talentos afinan su interpretación y cohesión musical dentro de El Sistema.</p>
+                            <button class="view-album-btn">
+                                <span>Ver álbum</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 2: Ensayos y Preparación -->
+                    <div class="event-card animate-on-scroll" data-animation="fadeInUp" data-delay="200" data-event="50-aniversario">
+                        <div class="event-image">
+                            <img src="../img/evento2.jpg" alt="Ensayos y Preparación">
+                            <div class="event-overlay">
+                                <div class="photo-count">
+                                    <i class="fas fa-images"></i>
+                                    <span>5 fotos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>Celebración por el 50 Aniversario de El Sistema</h3>
+                            <p class="event-date">Febrero 2025</p>
+                            <p class="event-description">Un evento conmemorativo que incluye conciertos, exposiciones y actividades educativas para destacar el legado de esta institución musical venezolana.</p>
+                            <button class="view-album-btn">
+                                <span>Ver álbum</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 5: Concierto Navideño -->
+                    <div class="event-card animate-on-scroll" data-animation="fadeInUp" data-delay="500" data-event="concierto-navideno">
+                        <div class="event-image">
+                            <img src="../img/evento5.jpg" alt="Concierto Navideño">
+                            <div class="event-overlay">
+                                <div class="photo-count">
+                                    <i class="fas fa-images"></i>
+                                    <span>10 fotos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>Encendido del Árbol en el Hotel Plaza Merú</h3>
+                            <p class="event-date">Diciembre 2024</p>
+                            <p class="event-description">Un evento anual que marcó el inicio de la temporada navideña en Ciudad Guayana, con música y luces en un ambiente festivo.</p>
+                            <button class="view-album-btn">
+                                <span>Ver álbum</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 3: Clases Magistrales -->
+                    <div class="event-card animate-on-scroll" data-animation="fadeInUp" data-delay="300" data-event="concierto-alma-llanera">
+                        <div class="event-image">
+                            <img src="../img/evento3.jpg" alt="Clases Magistrales">
+                            <div class="event-overlay">
+                                <div class="photo-count">
+                                    <i class="fas fa-images"></i>
+                                    <span>25 fotos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>Concierto Alma Llanera</h3>
+                            <p class="event-date">Noviembre 2023</p>
+                            <p class="event-description">Presentación del Programa Alma Llanera, con un repertorio que resalta la riqueza musical venezolana y la tradición.</p>
+                            <button class="view-album-btn">
+                                <span>Ver álbum</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 4: Música en la Comunidad -->
+                    <div class="event-card animate-on-scroll" data-animation="fadeInUp" data-delay="600" data-event="concierto-orquesta-pre-infantil">
+                        <div class="event-image">
+                            <img src="../img/evento6.JPG" alt="Festival de Música">
+                            <div class="event-overlay">
+                                <div class="photo-count">
+                                    <i class="fas fa-images"></i>
+                                    <span>51 fotos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>Concierto Orquesta Pre-Infantil</h3>
+                            <p class="event-date">Noviembre 2023</p>
+                            <p class="event-description">Un evento donde los músicos más jóvenes de El Sistema demostraron su talento y progreso en una presentación llena de entusiasmo.</p>
+                            <button class="view-album-btn">
+                                <span>Ver álbum</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Evento 6: Festival de Música -->
+                    <div class="event-card animate-on-scroll" data-animation="fadeInUp" data-delay="400" data-event="concierto-orinokia-mall">
+                        <div class="event-image">
+                            <img src="../img/evento4.jpg" alt="Música en la Comunidad">
+                            <div class="event-overlay">
+                                <div class="photo-count">
+                                    <i class="fas fa-images"></i>
+                                    <span>19 fotos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-info">
+                            <h3>Concierto Navideño de la Orquesta Regional</h3>
+                            <p class="event-date">Noviembre 2023</p>
+                            <p class="event-description">Un espectáculo festivo con gaitas y aguinaldos tradicionales, celebrado en el Orinokia Mall para dar la bienvenida a la Navidad.</p>
+                            <button class="view-album-btn">
+                                <span>Ver álbum</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vista de galería de imágenes (oculta inicialmente) -->
+        <section id="gallery-view" class="images-gallery-section" style="display: none;">
+            <div class="container">
+                <!-- Barra de navegación de la galería -->
+                <div class="gallery-nav animate-on-scroll" data-animation="fadeIn">
+                    <button id="back-to-events" class="nav-link">
+                        <i class="fas fa-arrow-left"></i> 
+                        <span>Volver a eventos</span>
+                    </button>
+                    <div class="gallery-info">
+                        <h2 id="current-event-title">Título del Evento</h2>
+                        <p id="current-event-date">Fecha del evento</p>
+                    </div>
+                    <div class="gallery-view-options">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="masonry"><i class="fas fa-th-large"></i></button>
+                    </div>
+                </div>
+
+                <div class="gallery-grid" id="gallery-container">
+                    <!-- Las imágenes se cargarán dinámicamente aquí -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal para ver imagen ampliada -->
+        <div id="image-modal" class="image-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img id="modal-image" src="/placeholder.svg" alt="Imagen ampliada">
+                <div class="modal-caption">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                </div>
+                <button class="modal-nav prev-image">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="modal-nav next-image">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Sección izquierda: Logo y descripción -->
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Disfruta de los mejores conciertos de El Sistema Núcleo Ciudad Guayana.
+                    </p>
+                </div>
+
+                <!-- Sección central: Enlaces institucionales y online -->
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="../quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección derecha: "TÚ ERES..." -->
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>QUIERO...</h3>
+                    <div class="you-are-buttons">
+                        <a href="../organizador-eventos.html" class="you-are-btn">Organizar un evento</a>
+                        <a href="../posibles-patrocinadores.html" class="you-are-btn">Ser un patrocinante</a>
+                        <a href="../buzon-sugerencias.html" class="you-are-btn">Dejar una sugerencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de patrocinadores -->
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="../img/logo_patrocinador_1.png" alt="Logo Patrocinador 1">
+                    </a>
+                    <a  class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="../img/logo_patrocinador_9.png" alt="Logo Patrocinador 2">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="../img/logo_patrocinador_3.png" alt="Logo Patrocinador 3">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="../img/logo_patrocinador_4.png" alt="Logo Patrocinador 4">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_5.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_6.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_7.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_8.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_2.png" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="galeria-imagenes.js"></script>
+    <script src="../script.js"></script>
+    <script src="../chatbot-button-subpaginas.js"></script>
+</body>
+</html>

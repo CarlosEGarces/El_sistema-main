@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es" class="light-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar" - El Sistema Ciudad Guayana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="orquesta-regional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header personalizado para Orquesta Regional -->
+    <header class="page-header-gradient">
+        <div class="container">
+            <!-- Elementos flotantes musicales -->
+            <div class="floating-elements">
+                <div class="floating-note">♪</div>
+                <div class="floating-note">♫</div>
+                <div class="floating-note">♪</div>
+                <div class="floating-note">♬</div>
+                <div class="floating-note">♫</div>
+            </div>
+            
+            <!-- Logo que aparece primero -->
+            <img id="page-logo" 
+                 src="../img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+                 alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+                 loading="lazy" 
+                 class="page-logo">
+            
+            <!-- Título que aparece después -->
+            <div id="page-title" class="page-title-container">
+                <h1 class="page-title-line1">ORQUESTA REGIONAL "MANUEL CARLOS PIAR"</h1>
+                <p class="page-title-line2">Tradición y excelencia musical regional</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../calendario.html">CALENDARIO</a></li>
+                        <li><a href="../boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="programa-coral.html">Programa Coral</a></li>
+                        <li><a href="orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">GALERÍA AUDIOVISUAL</a>
+                    <div class="camera-animation"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="../galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../donaciones.html">DONACIONES</a></li>
+                        <li><a href="../patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="../patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="../comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="../noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Sección de logo y redes sociales -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="../img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/elsistemaciudadguayana" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Sección de introducción -->
+        <section class="program-intro-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="intro-content animate-on-scroll" data-animation="fadeInUp">
+                        <h2 class="section-title">SOBRE LA ORQUESTA REGIONAL</h2>
+                        <p class="intro-description">
+                            La Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar" del Estado Bolívar representa 
+                            la máxima expresión artística de El Sistema en la región de Guayana. Nombrada en honor al 
+                            prócer de la independencia venezolana, esta agrupación reúne a los músicos más destacados 
+                            de la región, proyectando la excelencia musical tanto a nivel nacional como internacional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de director -->
+        <section class="director-section" id="director">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">DIRECCIÓN MUSICAL</h2>
+                <div class="director-content">
+                    <div class="director-image animate-on-scroll" data-animation="fadeInLeft">
+                        <img src="../img/regional_1.jpg" alt="Gregman Rodríguez Jiménez">
+                    </div>
+                    <div class="director-info animate-on-scroll" data-animation="fadeInRight">
+                        <h3>Liderazgo Musical de Excelencia</h3>
+                        <p>
+                            Bajo la dirección del Maestro Gregman Rodríguez Jiménez, la Orquesta Regional "Manuel Carlos Piar" 
+                            mantiene los más altos estándares de interpretación musical, representando dignamente 
+                            el legado cultural de la región de Guayana y el Estado Bolívar.
+                        </p>
+                        <div class="director-card">
+                            <div class="director-card-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="director-card-info">
+                                <h4>Gregman Rodríguez Jiménez</h4>
+                                <p>Director Musical de la Orquesta Regional "Manuel Carlos Piar"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de importancia -->
+        <section class="achievements-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">IMPORTANCIA DE LAS ORQUESTAS REGIONALES</h2>
+                <div class="achievements-grid">
+                    <article class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formación y Desarrollo Musical</h3>
+                        <p>
+                            Sirven como espacios de formación integral para jóvenes músicos, permitiéndoles 
+                            adquirir habilidades técnicas y artísticas de alto nivel, preparándolos para 
+                            formar parte de orquestas profesionales.
+                        </p>
+                    </article>
+
+                    <article class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3>Descentralización y Acceso</h3>
+                        <p>
+                            Facilitan el acceso a la educación musical en regiones apartadas, democratizando 
+                            la cultura y brindando oportunidades a jóvenes de diferentes contextos 
+                            socioeconómicos en todo el Estado Bolívar.
+                        </p>
+                    </article>
+
+                    <article class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Impacto Social</h3>
+                        <p>
+                            Funcionan como herramientas de transformación social, ofreciendo alternativas 
+                            constructivas a problemas como la exclusión social, fomentando valores de 
+                            disciplina, trabajo en equipo y compromiso.
+                        </p>
+                    </article>
+
+                    <article class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Crecimiento Artístico y Cultural</h3>
+                        <p>
+                            Contribuyen al desarrollo cultural de sus comunidades interpretando repertorios 
+                            variados, desde música clásica hasta composiciones nacionales, promoviendo 
+                            la identidad cultural venezolana.
+                        </p>
+                    </article>
+
+                    <article class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="500">
+                        <div class="card-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>Proyección Internacional</h3>
+                        <p>
+                            Muchos músicos que inician en estas orquestas han alcanzado reconocimiento 
+                            internacional, fortaleciendo la reputación de El Sistema como uno de los 
+                            programas educativos más exitosos a nivel mundial.
+                        </p>
+                    </article>
+
+                    <article class="achievement-card animate-on-scroll" data-animation="fadeInUp" data-delay="600">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Formación de Ciudadanos Integrales</h3>
+                        <p>
+                            Estas orquestas no solo forman músicos, sino ciudadanos integrales comprometidos 
+                            con su sociedad, consolidando a El Sistema como un modelo de inclusión y 
+                            excelencia artística.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de beneficios -->
+        <section class="benefits-section">
+            <div class="container">
+                <div class="content-wrapper benefits-content">
+                    <div class="benefits-text animate-on-scroll" data-animation="fadeInLeft">
+                        <h2>LOGROS Y RECONOCIMIENTOS</h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Representación oficial del Estado Bolívar en eventos nacionales</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Participación en festivales y encuentros musicales regionales</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Formación de músicos que integran orquestas profesionales</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Promoción de la identidad cultural de la región de Guayana</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Modelo de inclusión social y excelencia artística</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Contribución al desarrollo cultural del Estado Bolívar</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="../donaciones.html" class="btn" style="background: linear-gradient(135deg, var(--regional-navy), var(--regional-gold)); color: white;">APOYA ESTE PROGRAMA</a>
+                        </div>
+                    </div>
+                    <div class="benefits-image animate-on-scroll" data-animation="fadeInRight">
+                        <img src="../img/regional_2.jpg" alt="Oboes de la Orquesta Regional">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">INFORMACIÓN DE CONTACTO</h2>
+                <div class="contact-content animate-on-scroll" data-animation="fadeInUp">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Av. Guayana, Centro Empresarial Centro Alta Vista (Antiguo Maxy's), P.B., Alta Vista, Puerto Ordaz, Municipio Caroní, Ciudad Guayana, Estado Bolívar</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>nucleo.ciudadguayana@elsistema.org.ve</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-music"></i>
+                            <div>
+                                <h4>Director Musical</h4>
+                                <p>Maestro Gregman Rodríguez Jiménez</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Integración</h4>
+                                <p>Jóvenes músicos destacados de la región de Guayana y el Estado Bolívar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Sección izquierda: Logo y descripción -->
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Disfruta de los mejores conciertos de El Sistema Núcleo Ciudad Guayana.
+                    </p>
+                </div>
+
+                <!-- Sección central: Enlaces institucionales y online -->
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="../quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección derecha: "TÚ ERES..." -->
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>QUIERO...</h3>
+                    <div class="you-are-buttons">
+                        <a href="../organizador-eventos.html" class="you-are-btn">Organizar un evento</a>
+                        <a href="../posibles-patrocinadores.html" class="you-are-btn">Ser un patrocinante</a>
+                        <a href="../buzon-sugerencias.html" class="you-are-btn">Dejar una sugerencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de patrocinadores -->
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="../img/logo_patrocinador_1.png" alt="Logo Patrocinador 1">
+                    </a>
+                    <a  class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="../img/logo_patrocinador_9.png" alt="Logo Patrocinador 2">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="../img/logo_patrocinador_3.png" alt="Logo Patrocinador 3">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="../img/logo_patrocinador_4.png" alt="Logo Patrocinador 4">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_5.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_6.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_7.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_8.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_2.png" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../chatbot-button-subpaginas.js"></script>
+    <script>
+        // Script específico para la animación del header de Orquesta Regional
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.getElementById('page-logo');
+            const title = document.getElementById('page-title');
+            
+            // Mostrar logo primero
+            setTimeout(() => {
+                // Después de 3 segundos, ocultar logo y mostrar título
+                logo.classList.add('fade-out');
+                setTimeout(() => {
+                    title.classList.add('show');
+                }, 500);
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Prensa - El Sistema Núcleo Ciudad Guayana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="noticias-prensa-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header principal con animación de logo a título -->
+    <header class="page-header-gradient">
+    <div class="container text-center header-content">
+        <!-- Logo que aparece primero y luego desaparece -->
+        <img id="page-logo" 
+             src="img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+             alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+             loading="lazy" 
+             class="page-logo">
+        
+        <!-- Título que aparece después del logo -->
+        <div id="page-title" class="page-title-container">
+            <h1 class="page-title-line1">Noticias y Prensa</h1>
+            <h2 class="page-title-line2">Nuestra música, nuestras historias: lo que dicen de nosotros</h2>
+        </div>
+    </div>
+    </header>
+
+<!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="agrupaciones/alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="agrupaciones/simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        <li><a href="agrupaciones/orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="agrupaciones/orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">GALERÍA AUDIOVISUAL</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="donaciones.html">DONACIONES</a></li>
+                        <li><a href="patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de logo y redes sociales - ACTUALIZADA: Más minimalista -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/elsistemaciudadguayana" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Sección de anuncio de seleccionados -->
+        <section class="seleccionados-announcement">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">¡FELICITACIONES A NUESTROS MÚSICOS!</h2>
+                <div class="announcement-intro animate-on-scroll" data-animation="fadeInUp">
+                    <p>Con gran orgullo anunciamos que talentosos músicos de nuestro Núcleo Ciudad Guayana han sido seleccionados para representarnos en las prestigiosas orquestas nacionales de Venezuela. Su dedicación, talento y esfuerzo los han llevado a formar parte de estas importantes agrupaciones musicales del país.</p>
+                </div>
+
+                <!-- Orquesta Sinfónica Nacional Infantil -->
+                <div class="orquesta-section animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                    <h3 class="orquesta-title">Orquesta Sinfónica Nacional Infantil de Venezuela</h3>
+                    <div class="orquesta-content">
+                        <div class="noticias-carousel-section">
+                            <div class="noticias-carousel-wrapper">
+                                <div class="noticias-carousel-container" id="noticias-slider-infantil">
+                                    <div class="noticias-slide active">
+                                        <img src="img/noticiaInf_1.jpg" alt="Representantes Orquesta Infantil 1">
+                                    </div>
+                                    <div class="noticias-slide">
+                                        <img src="img/noticiaInf_2.jpg" alt="Representantes Orquesta Infantil 2">
+                                    </div>
+                                    <div class="noticias-slide">
+                                        <img src="img/noticiaInf_3.jpg" alt="Representantes Orquesta Infantil 3">
+                                    </div>
+                                    <div class="noticias-slide">
+                                        <img src="img/noticiaInf_4.jpg" alt="Representantes Orquesta Infantil 4">
+                                    </div>
+                                </div>
+                                <button class="noticias-nav-btn noticias-prev" data-slider="infantil" aria-label="Anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="noticias-nav-btn noticias-next" data-slider="infantil" aria-label="Siguiente">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="seleccionados-list">
+                            <div class="seleccionado-card">
+                                <div class="seleccionado-info">
+                                    <h4>Victoria Cordova Arciniegas</h4>
+                                    <p class="edad">13 años</p>
+                                    <p class="instrumento">Violín</p>
+                                </div>
+                                <div class="seleccionado-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                            </div>
+                            <div class="seleccionado-card">
+                                <div class="seleccionado-info">
+                                    <h4>Ivana Morales Chacón</h4>
+                                    <p class="edad">11 años</p>
+                                    <p class="instrumento">Clarinete</p>
+                                </div>
+                                <div class="seleccionado-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                            </div>
+                            <div class="seleccionado-card">
+                                <div class="seleccionado-info">
+                                    <h4>Benjamin Mena Jiménez</h4>
+                                    <p class="edad">11 años</p>
+                                    <p class="instrumento">Trompeta</p>
+                                </div>
+                                <div class="seleccionado-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                            </div>
+                            <div class="seleccionado-card">
+                                <div class="seleccionado-info">
+                                    <h4>Pedro Nastasi Mata</h4>
+                                    <p class="edad">11 años</p>
+                                    <p class="instrumento">Percusión</p>
+                                </div>
+                                <div class="seleccionado-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orquesta Sinfónica Nacional Juvenil -->
+                <div class="orquesta-section animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                    <h3 class="orquesta-title">Orquesta Sinfónica Nacional Juvenil de Venezuela</h3>
+                    <div class="orquesta-content">
+                        <div class="noticias-carousel-section">
+                            <div class="noticias-carousel-wrapper">
+                                <div class="noticias-carousel-container" id="noticias-slider-juvenil">
+                                    <div class="noticias-slide active">
+                                        <img src="img/noticiaJuv_1.jpg" alt="Representantes Orquesta Juvenil 1">
+                                    </div>
+                                    <div class="noticias-slide">
+                                        <img src="img/noticiaJuv_2.jpg" alt="Representantes Orquesta Juvenil 2">
+                                    </div>
+                                    <div class="noticias-slide">
+                                        <img src="img/noticiaJuv_3.jpg" alt="Representantes Orquesta Juvenil 3">
+                                    </div>
+                                </div>
+                                <button class="noticias-nav-btn noticias-prev" data-slider="juvenil" aria-label="Anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="noticias-nav-btn noticias-next" data-slider="juvenil" aria-label="Siguiente">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="seleccionados-list">
+                            <div class="seleccionado-card">
+                                <div class="seleccionado-info">
+                                    <h4>Leonardo Morales Chacón</h4>
+                                    <p class="edad">14 años</p>
+                                    <p class="instrumento">Violín</p>
+                                </div>
+                                <div class="seleccionado-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                            </div>
+                            <div class="seleccionado-card">
+                                <div class="seleccionado-info">
+                                    <h4>Diego Bermúdez Vargas</h4>
+                                    <p class="edad">18 años</p>
+                                    <p class="instrumento">Contrabajo</p>
+                                </div>
+                                <div class="seleccionado-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                            </div>
+                            <div class="seleccionado-card">
+                                <div class="seleccionado-info">
+                                    <h4>Víctor Mosquera Alcalá</h4>
+                                    <p class="edad">17 años</p>
+                                    <p class="instrumento">Flauta Traversa</p>
+                                </div>
+                                <div class="seleccionado-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Archivo de Prensa -->
+        <section class="archivo-prensa-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">ARCHIVO DE PRENSA</h2>
+                <div class="archivo-intro animate-on-scroll" data-animation="fadeInUp">
+                    <p>Descubre las noticias y artículos que han destacado el trabajo y los logros de El Sistema Núcleo Ciudad Guayana en los medios de comunicación.</p>
+                </div>
+                
+                <div class="archivo-grid">
+                    <!-- Noticia 1 -->
+                    <div class="archivo-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="card-header">
+                            <div class="source-info">
+                                <i class="fas fa-newspaper"></i>
+                                <span class="source-name">Primicia</span>
+                            </div>
+                            <span class="publish-date">2023</span>
+                        </div>
+                        <h3 class="card-title">Ceden oficinas de CVG a Orquesta Sinfónica de Ciudad Guayana</h3>
+                        <p class="card-excerpt">La Corporación Venezolana de Guayana (CVG) cedió un espacio en sus instalaciones para que la Orquesta Sinfónica de Ciudad Guayana pueda realizar sus ensayos y actividades administrativas.</p>
+                        <div class="card-footer">
+                            <a href="https://primicia.com.ve/placeres/ceden-oficinas-de-cvg-a-orquesta-sinfonica-de-ciudad-guayana/" class="read-link" target="_blank" rel="noopener noreferrer">
+                                <span>Leer artículo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Noticia 2 -->
+                    <div class="archivo-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="card-header">
+                            <div class="source-info">
+                                <i class="fas fa-newspaper"></i>
+                                <span class="source-name">Primicia</span>
+                            </div>
+                            <span class="publish-date">2023</span>
+                        </div>
+                        <h3 class="card-title">Orquesta Sinfónica de Ciudad Guayana se presentó con director invitado</h3>
+                        <p class="card-excerpt">La agrupación musical ofreció un concierto especial bajo la batuta de un reconocido director internacional, demostrando el alto nivel artístico alcanzado.</p>
+                        <div class="card-footer">
+                            <a href="https://primicia.com.ve/placeres/orquesta-sinfonica-de-ciudad-guayana-se-presento-con-director-invitado/" class="read-link" target="_blank" rel="noopener noreferrer">
+                                <span>Leer artículo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Noticia 3 -->
+                    <div class="archivo-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="card-header">
+                            <div class="source-info">
+                                <i class="fas fa-newspaper"></i>
+                                <span class="source-name">Primicia</span>
+                            </div>
+                            <span class="publish-date">2023</span>
+                        </div>
+                        <h3 class="card-title">Orquesta Sinfónica en Guayana quiere ofrecer más conciertos</h3>
+                        <p class="card-excerpt">La agrupación musical busca ampliar su oferta de presentaciones para llegar a más público en la región y fortalecer el desarrollo cultural.</p>
+                        <div class="card-footer">
+                            <a href="https://primicia.com.ve/guayana/ciudad/orquesta-sinfonica-en-guayana-quiere-ofrecer-mas-conciertos/" class="read-link" target="_blank" rel="noopener noreferrer">
+                                <span>Leer artículo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Noticia 4 -->
+                    <div class="archivo-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                        <div class="card-header">
+                            <div class="source-info">
+                                <i class="fas fa-broadcast-tower"></i>
+                                <span class="source-name">Radio Fe y Alegría Noticias</span>
+                            </div>
+                            <span class="publish-date">2022</span>
+                        </div>
+                        <h3 class="card-title">Músicos guayaneses destacaron en el aniversario de la Orquesta Sinfónica Regional Juvenil de Bolívar</h3>
+                        <p class="card-excerpt">Jóvenes músicos de Ciudad Guayana tuvieron una destacada participación en la celebración del aniversario, demostrando el alto nivel de formación musical.</p>
+                        <div class="card-footer">
+                            <a href="https://www.radiofeyalegrianoticias.com/musicos-guayaneses-destacaron-en-el-aniversario-de-la-orquesta-sinfonica-regional-juvenil-de-bolivar/" class="read-link" target="_blank" rel="noopener noreferrer">
+                                <span>Leer artículo</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Sección izquierda: Logo y descripción -->
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Disfruta de los mejores conciertos de El Sistema Núcleo Ciudad Guayana.
+                    </p>
+                </div>
+
+                <!-- Sección central: Enlaces institucionales y online -->
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección derecha: "TÚ ERES..." -->
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>QUIERO...</h3>
+                    <div class="you-are-buttons">
+                        <a href="organizador-eventos.html" class="you-are-btn">Organizar un evento</a>
+                        <a href="posibles-patrocinadores.html" class="you-are-btn">Ser un patrocinante</a>
+                        <a href="buzon-sugerencias.html" class="you-are-btn">Dejar una sugerencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de patrocinadores -->
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="img/logo_patrocinador_1.png" alt="Logo Patrocinador 1">
+                    </a>
+                    <a  class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="img/logo_patrocinador_9.png" alt="Logo Patrocinador 2">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="img/logo_patrocinador_3.png" alt="Logo Patrocinador 3">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="img/logo_patrocinador_4.png" alt="Logo Patrocinador 4">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_5.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_6.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_7.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_8.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_2.png" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot-button.js"></script>
+    <script src="noticias-carousel.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Contenedor principal del carrusel */
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    background: none; /* Elimina cualquier fondo del contenedor principal */
+}
+
+/* Contenedor interno para las diapositivas */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+    background: none; /* Elimina cualquier fondo del contenedor interno */
+}
+
+/* Estilo para cada diapositiva */
+.carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background: none; /* Elimina cualquier fondo de la diapositiva */
+}
+
+.carousel-item img {
+    width: 90%; /* Imágenes escalables */
+    height: auto;
+    max-height: 400px; /* Altura máxima para evitar desbordamientos */
+    border-radius: 12px; /* Bordes redondeados */
+    object-fit: cover; /* Asegura que las imágenes se ajusten bien */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Botones de navegación */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    border-radius: 50%; /* Botones circulares */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control:hover {
+    opacity: 1;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Indicadores de diapositivas (opcional) */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        max-width: 400px;
+    }
+
+    .carousel-item img {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-wrapper {
+        max-width: 300px;
+    }
+
+    .carousel-item img {
+        max-height: 150px;
+    }
+}

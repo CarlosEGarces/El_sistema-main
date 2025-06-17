@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Videos - El Sistema Ciudad Guayana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="galeria-audiovisual.css">
+    <link rel="stylesheet" href="galeria-videos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header principal con animación de logo a título -->
+    <header class="page-header-gradient">
+    <div class="container text-center header-content">
+        <!-- Logo que aparece primero y luego desaparece -->
+        <img id="page-logo" 
+             src="../img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+             alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+             loading="lazy" 
+             class="page-logo">
+        
+        <!-- Título que aparece después del logo -->
+        <div id="page-title" class="page-title-container">
+            <h1 class="page-title-line1">GALERÍA DE VIDEOS</h1>
+            <h2 class="page-title-line2">ESCUCHE NUESTROS MEJORES MOMENTOS</h2>
+        </div>
+    </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../calendario.html">CALENDARIO</a></li>
+                        <li><a href="../boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="../agrupaciones/agrupaciones.html" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="../agrupaciones/alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="../agrupaciones/simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="../agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        <li><a href="../agrupaciones/orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="../agrupaciones/orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#galeria" class="dropdown-toggle">GALERIA AUDIOVISUAL</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../galeria/galeria-imagenes.html">GALERIA IMÁGENES</a></li>
+                        <li><a href="../galeria/galeria-videos.html">GALERÍA VIDEOS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../donaciones.html">DONACIONES</a></li>
+                        <li><a href="../patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="../quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="../patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="../comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="../noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de logo y redes sociales -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="../img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/elsistemaciudadguayana" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Sección de Estreno -->
+        <section class="estreno-section">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="fadeIn">¡ESTRENO ESPECIAL!</h2>
+        <div class="estreno-content animate-on-scroll" data-animation="fadeInUp">
+            <div class="estreno-video">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/BSAhWxHDOas?si=FBxYcOYX3bBYvMaF" 
+                        title="Estreno - Producción Audiovisual Puerto Ordaz" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="estreno-info">
+                <h3>UNA OBRA MUSICAL PARA PUERTO ORDAZ</h3>
+                <p class="estreno-description">
+                    Una obra musical realizada con el más profundo amor hacia Puerto Ordaz. ❤️
+                    Esperamos que se convierta en parte de la genuina identidad musical de nuestra Guayana. 
+                    Una fusión de la música tradicional con orquestación y coros que reflejan una sonoridad 
+                    única y original como regalo a nuestra tierra. 🎶
+                </p>
+                <div class="estreno-credits-compact">
+                    <div class="credit-card">
+                        <div class="credit-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="credit-content">
+                            <strong>Creador Original</strong>
+                            <a href="https://youtube.com/@ernestourbanomusic?si=QjO3tO3p3DhCDa-g" target="_blank" rel="noopener noreferrer">
+                                @ernestourbanomusic
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección de YouTube Shorts -->
+<section class="shorts-section">
+    <div class="container">
+        <div class="shorts-layout">
+            <div class="shorts-info">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">YOUTUBE SHORTS</h2>
+                <p class="section-subtitle animate-on-scroll" data-animation="fadeInUp">
+                    Descubre momentos especiales de nuestras presentaciones en formato corto
+                </p>
+                
+                <div class="shorts-description">
+                    <div class="current-short-info" id="current-short-info">
+                        <h4 id="current-short-title">Confluencia con las Orquestas</h4>
+                        <p id="current-short-description">
+                            Descubre cómo nuestras diferentes agrupaciones se unen para crear momentos musicales únicos. 
+                            Una muestra del talento y la diversidad de El Sistema Ciudad Guayana.
+                        </p>
+                    </div>
+                    
+                    <div class="shorts-navigation">
+                        <button class="shorts-nav-btn shorts-prev" aria-label="Short anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="shorts-counter">
+                            <span id="current-short-number">1</span> / <span id="total-shorts">8</span>
+                        </div>
+                        <button class="shorts-nav-btn shorts-next" aria-label="Siguiente short">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Créditos mejorados -->
+                <div class="creator-credits">
+                    <div class="credits-header">
+                        <i class="fas fa-heart"></i>
+                        <span>Agradecimientos Especiales</span>
+                    </div>
+                    <div class="creator-card">
+                        <div class="creator-avatar">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="creator-info">
+                            <h5>@ytzaf</h5>
+                            <p>Creador Original de YouTube Shorts</p>
+                            <a href="https://youtube.com/@ytzaf?si=-Wu0zbYQZ-RokvZb" target="_blank" rel="noopener noreferrer" class="creator-link">
+                                <span>Visitar Canal</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="shorts-carousel-section">
+                <div class="shorts-carousel-wrapper">
+                    <div class="shorts-carousel-container" id="videos-shorts-slider">
+                        <!-- Short 1 -->
+                        <div class="shorts-slide active" data-video-id="jxZ_T0Eiu10" data-title="Confluencia con las Orquestas" data-description="Descubre cómo nuestras diferentes agrupaciones se unen para crear momentos musicales únicos. Una muestra del talento y la diversidad de El Sistema Ciudad Guayana.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/jxZ_T0Eiu10?autoplay=1&mute=1&controls=0&loop=1&playlist=jxZ_T0Eiu10&modestbranding=1&rel=0"
+                                    title="Confluencia Orquesta Sinfónica"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <!-- Short 2 -->
+                        <div class="shorts-slide" data-video-id="yNwBAfth1jw" data-title="El Sistema Ciudad Guayana - Parte 2" data-description="Continúa conociendo la historia y el impacto de El Sistema en nuestra comunidad. Una mirada profunda a nuestro trabajo musical y social.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/yNwBAfth1jw?autoplay=1&mute=1&controls=0&loop=1&playlist=yNwBAfth1jw&modestbranding=1&rel=0"
+                                    title="El Sistema Ciudad Guayana Parte 2"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <!-- Short 3 -->
+                        <div class="shorts-slide" data-video-id="cda6o8Dj_W0" data-title="El Sistema Ciudad Guayana - Parte 3" data-description="Explora más aspectos de nuestra institución musical. Conoce a nuestros músicos y el impacto transformador de la música en sus vidas.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/cda6o8Dj_W0?autoplay=1&mute=1&controls=0&loop=1&playlist=cda6o8Dj_W0&modestbranding=1&rel=0"
+                                    title="El Sistema Ciudad Guayana Parte 3"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <!-- Short 4 -->
+                        <div class="shorts-slide" data-video-id="kHy4jY3vQLE" data-title="Conoce más del Sistema - Parte 4" data-description="Sumérgete en el mundo de El Sistema y descubre cómo la música transforma vidas y comunidades en Ciudad Guayana.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/kHy4jY3vQLE?autoplay=1&mute=1&controls=0&loop=1&playlist=kHy4jY3vQLE&modestbranding=1&rel=0"
+                                    title="Conoce más del Sistema"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <!-- Short 5 -->
+                        <div class="shorts-slide" data-video-id="Ff7D2EZhSvk" data-title="Audiciones con más de 5000 Músicos" data-description="Presencia el increíble proceso de audiciones donde más de 5000 músicos demuestran su talento y pasión por la música.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/Ff7D2EZhSvk?autoplay=1&mute=1&controls=0&loop=1&playlist=Ff7D2EZhSvk&modestbranding=1&rel=0"
+                                    title="Audiciones con 5000 Músicos"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <!-- Short 6 -->
+                        <div class="shorts-slide" data-video-id="Ut557T8hbTs" data-title="Confluye con el Sistema - Parte 6" data-description="Únete a la confluencia musical y descubre cómo El Sistema conecta corazones a través de la música en nuestra región.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/Ut557T8hbTs?autoplay=1&mute=1&controls=0&loop=1&playlist=Ut557T8hbTs&modestbranding=1&rel=0"
+                                    title="Confluye con el Sistema"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <!-- Short 7 -->
+                        <div class="shorts-slide" data-video-id="AzMsMbE7fQk" data-title="Práctica y Disciplina del Éxito" data-description="Conoce los valores fundamentales que guían a nuestros músicos: la práctica constante y la disciplina como pilares del éxito musical.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/AzMsMbE7fQk?autoplay=1&mute=1&controls=0&loop=1&playlist=AzMsMbE7fQk&modestbranding=1&rel=0"
+                                    title="Práctica y Disciplina"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        
+                        <!-- Short 8 -->
+                        <div class="shorts-slide" data-video-id="ChZyF4Kp_0M" data-title="Grandes Artistas - Parte 8" data-description="Celebra a los grandes artistas que han surgido de El Sistema y continúan inspirando a las nuevas generaciones de músicos.">
+                            <div class="short-video-container">
+                                <iframe 
+                                    src="https://www.youtube.com/embed/ChZyF4Kp_0M?autoplay=1&mute=1&controls=0&loop=1&playlist=ChZyF4Kp_0M&modestbranding=1&rel=0"
+                                    title="Grandes Artistas"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Sección de Videos Principales -->
+<section class="main-videos-section">
+    <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="fadeIn">NUESTROS CONCIERTOS</h2>
+        <p class="section-subtitle animate-on-scroll" data-animation="fadeInUp">
+            Disfruta de nuestras mejores presentaciones musicales
+        </p>
+        
+        <div class="concerts-grid">
+            <!-- Video 1 -->
+            <article class="concert-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                <div class="concert-image">
+                    <img src="https://img.youtube.com/vi/Niul2eScndQ/maxresdefault.jpg" alt="J. Strauss II: Die Fledermaus">
+                    <div class="concert-overlay">
+                        <div class="play-button-large" data-video-id="Niul2eScndQ">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="concert-info">
+                    <h3>J. Strauss II: Die Fledermaus - Overture</h3>
+                    <p class="concert-date">24 de octubre de 2024</p>
+                    <p class="concert-description">
+                        Concierto de Inicio de temporada 2024-2025 en el Auditorio del Núcleo Ciudad Guayana. 
+                        Una interpretación magistral de la obertura de "Die Fledermaus" bajo la dirección del Maestro Gregman Rodríguez.
+                    </p>
+                    <div class="concert-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span>Director: Gregman Rodríguez</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Auditorio del Núcleo Ciudad Guayana</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-music"></i>
+                            <span>Orquesta Sinfónica Juvenil</span>
+                        </div>
+                    </div>
+                    <button class="watch-btn" data-video-id="Niul2eScndQ">
+                        <span>Ver concierto</span>
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Video 2 -->
+            <article class="concert-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                <div class="concert-image">
+                    <img src="https://img.youtube.com/vi/9b4DkjBxw4c/maxresdefault.jpg" alt="Bizet: L'Arlésienne Suite">
+                    <div class="concert-overlay">
+                        <div class="play-button-large" data-video-id="9b4DkjBxw4c">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="concert-info">
+                    <h3>Bizet: L'Arlésienne Suite No. 1 - IV. Carillon</h3>
+                    <p class="concert-date">24 de octubre de 2024</p>
+                    <p class="concert-description">
+                        Una hermosa interpretación del "Carillon" de la Suite L'Arlésienne de Bizet, 
+                        destacando la sonoridad única de nuestra orquesta juvenil en el inicio de la temporada 2024-2025.
+                    </p>
+                    <div class="concert-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span>Director: Gregman Rodríguez</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Auditorio del Núcleo Ciudad Guayana</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-music"></i>
+                            <span>Orquesta Sinfónica Juvenil</span>
+                        </div>
+                    </div>
+                    <button class="watch-btn" data-video-id="9b4DkjBxw4c">
+                        <span>Ver concierto</span>
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Video 3 -->
+            <article class="concert-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                <div class="concert-image">
+                    <img src="https://img.youtube.com/vi/C0EEEcQpF6Y/maxresdefault.jpg" alt="Dvořák Symphony No. 9">
+                    <div class="concert-overlay">
+                        <div class="play-button-large" data-video-id="C0EEEcQpF6Y">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="concert-info">
+                    <h3>Dvořák - Symphony No. 9 "From the New World"</h3>
+                    <p class="concert-date">16 de febrero de 2023</p>
+                    <p class="concert-description">
+                        Concierto conmemorativo del 48° aniversario de El Sistema. El cuarto movimiento "Allegro con fuoco" 
+                        de la icónica Sinfonía del Nuevo Mundo interpretado en el Teatro de la Sede.
+                    </p>
+                    <div class="concert-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span>Director: Carlos Sanchez</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Teatro de la Sede</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>48° Aniversario de El Sistema</span>
+                        </div>
+                    </div>
+                    <button class="watch-btn" data-video-id="C0EEEcQpF6Y">
+                        <span>Ver concierto</span>
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Video 4 -->
+            <article class="concert-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                <div class="concert-image">
+                    <img src="https://img.youtube.com/vi/-cyz7-mrqzE/maxresdefault.jpg" alt="Bernstein West Side Story">
+                    <div class="concert-overlay">
+                        <div class="play-button-large" data-video-id="-cyz7-mrqzE">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="concert-info">
+                    <h3>L. Bernstein - West Side Story (Mambo)</h3>
+                    <p class="concert-date">24 de noviembre de 2023</p>
+                    <p class="concert-description">
+                        Celebración del mes del músico con una energética interpretación del "Mambo" de West Side Story 
+                        en el Orinokia Mall, llevando la música clásica a espacios públicos.
+                    </p>
+                    <div class="concert-details">
+                        <div class="detail-item">
+                            <i class="fas fa-user"></i>
+                            <span>Director: Gregman Rodríguez</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Orinokia Mall</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Mes del Músico</span>
+                        </div>
+                    </div>
+                    <button class="watch-btn" data-video-id="-cyz7-mrqzE">
+                        <span>Ver concierto</span>
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </article>
+        </div>
+        
+        <!-- Créditos para Videos Principales -->
+        <div class="videos-credits animate-on-scroll" data-animation="fadeInUp">
+    <div class="credits-header">
+        <i class="fas fa-heart"></i>
+        <span>Agradecimientos Especiales</span>
+    </div>
+    <div class="creator-card">
+        <div class="creator-avatar">
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="creator-info">
+            <h5>@andresgomezmusica</h5>
+            <p>Creador Original de Videos de Conciertos</p>
+            <a href="https://youtube.com/@andresgomezmusica?si=H9974JaZRYLtMMN2" target="_blank" rel="noopener noreferrer" class="creator-link">
+                <span>Visitar Canal</span>
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+    </div>
+</section>
+
+        <!-- Sección de llamada a la acción para YouTube -->
+        <section class="youtube-cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll" data-animation="fadeIn">
+                    <div class="cta-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="cta-text">
+                        <h2>¿Te gustaron nuestros videos?</h2>
+                        <p>Suscríbete a nuestro canal de YouTube para no perderte ninguna de nuestras presentaciones, ensayos y momentos especiales. Únete a nuestra comunidad musical y mantente al día con todas nuestras actividades.</p>
+                    </div>
+                    <div class="cta-action">
+                        <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" target="_blank" rel="noopener noreferrer" class="youtube-btn">
+                            <i class="fab fa-youtube"></i>
+                            <span>Visitar nuestro canal</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para reproducir video -->
+        <div id="video-modal" class="video-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="video-container">
+                    <iframe id="video-frame" src="/placeholder.svg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Sección izquierda: Logo y descripción -->
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="../img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Disfruta de los mejores conciertos de El Sistema Núcleo Ciudad Guayana.
+                    </p>
+                </div>
+
+                <!-- Sección central: Enlaces institucionales y online -->
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="../quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección derecha: "TÚ ERES..." -->
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>QUIERO...</h3>
+                    <div class="you-are-buttons">
+                        <a href="../organizador-eventos.html" class="you-are-btn">Organizar un evento</a>
+                        <a href="../posibles-patrocinadores.html" class="you-are-btn">Ser un patrocinante</a>
+                        <a href="../buzon-sugerencias.html" class="you-are-btn">Dejar una sugerencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de patrocinadores -->
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="../img/logo_patrocinador_1.png" alt="Logo Patrocinador 1">
+                    </a>
+                    <a  class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="../img/logo_patrocinador_9.png" alt="Logo Patrocinador 2">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="../img/logo_patrocinador_3.png" alt="Logo Patrocinador 3">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="../img/logo_patrocinador_4.png" alt="Logo Patrocinador 4">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_5.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_6.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_7.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_8.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="../img/logo_patrocinador_2.png" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../chatbot-button-subpaginas.js"></script>
+    <script src="galeria-videos.js"></script>
+</body>
+</html>

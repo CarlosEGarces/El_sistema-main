@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones - El Sistema Núcleo Ciudad Guayana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="donaciones-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botón de cambio de modo -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Header principal con animación de logo a título -->
+    <header class="page-header-gradient">
+        <div class="container text-center header-content">
+            <!-- Logo que aparece primero y luego desaparece -->
+            <img id="page-logo" 
+                 src="img/Logotema 50 Aniversario El Sistema Ciudad Guayana.PNG" 
+                 alt="Logo 50 Aniversario El Sistema Ciudad Guayana" 
+                 loading="lazy" 
+                 class="page-logo">
+            
+            <!-- Título que aparece después del logo -->
+            <div id="page-title" class="page-title-container">
+                <h1 class="page-title-line1">DONACIONES</h1>
+                <h2 class="page-title-line2">APOYA NUESTRO PROYECTO</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">INICIO</a><div class="music-notes"></div></li>               
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">CONCIERTOS Y EVENTOS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="boletos.html">BOLETOS</a></li>
+                    </ul>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">AGRUPACIONES</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="agrupaciones/iniciacion-musical.html">Iniciación Musical</a></li>
+                        <li><a href="agrupaciones/alma-llanera.html">Programa Alma Llanera</a></li>
+                        <li><a href="agrupaciones/simon-bolivar.html">Programa Simón Bolívar</a></li>
+                        <li><a href="agrupaciones/programa-coral.html">Programa Coral</a></li>
+                        <li><a href="agrupaciones/orquesta-juvenil.html">Orquesta Sinfónica Juvenil de Ciudad Guayana</a></li>
+                        <li><a href="agrupaciones/orquesta-regional.html">Orquesta Sinfónica Regional Juvenil "Manuel Carlos Piar"</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">GALERÍA AUDIOVISUAL</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="galeria/galeria-imagenes.html">GALERÍA DE IMÁGENES</a></li>
+                        <li><a href="galeria/galeria-videos.html">GALERÍA DE VIDEOS</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">APOYO</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="donaciones.html">DONACIONES</a></li>
+                        <li><a href="patrocinadores.html">SÉ UN PATROCINADOR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#agrupaciones" class="dropdown-toggle">SOBRE NOSOTROS</a>
+                    <div class="music-notes"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+                        <li><a href="patrocinadores.html">NUESTROS PATROCINADORES</a></li>
+                        <li><a href="comunidad.html">COMUNIDAD</a></li>
+                        <li><a href="noticias-prensa.html">NOTICIAS Y PRENSA</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de logo y redes sociales - ACTUALIZADA: Más minimalista -->
+    <section class="branding-section">
+        <div class="container logo-social">
+            <div class="logo-container animate-on-scroll" data-animation="fadeInLeft">
+                <figure class="logo-wrapper">
+                    <img src="img/logo-molecula.PNG" alt="Logo El Sistema" loading="lazy" class="sistema-logo-img light-mode-logo">
+                    <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy" class="sistema-logo-img dark-mode-logo">
+                </figure>
+                <div class="logo-text">
+                    <p class="bold">EL SISTEMA</p>
+                    <p>Núcleo Ciudad Guayana</p>
+                </div>
+            </div>
+            <div class="social-icons animate-on-scroll" data-animation="fadeInRight" aria-label="Redes sociales">
+                <a href="https://www.instagram.com/elsistemaciudadguayana/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@nucleociudadguayana?si=ApoMP9h69TplhG53" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/elsistemaciudadguayana" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main id="contenido-principal">
+        <!-- Sección de introducción a las donaciones -->
+        <section class="donation-intro-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="intro-text animate-on-scroll" data-animation="fadeIn">
+                        <h2 class="section-title">TU APOYO TRANSFORMA VIDAS</h2>
+                        <p>El Sistema Nacional de Orquestas y Coros Juveniles e Infantiles de Venezuela es un proyecto social y cultural que ha transformado la vida de miles de niños y jóvenes a través de la música.</p>
+                        <p>Tu donación nos permite continuar ofreciendo educación musical gratuita, instrumentos, y oportunidades de desarrollo artístico a niños y jóvenes de Ciudad Guayana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="carousel-wrapper">
+            <figure class="carousel-container animate-on-scroll" data-animation="zoomIn" aria-label="Galería de imágenes">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="img/donaciones_1.JPG" alt="Orquesta en concierto" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/donaciones_2.JPG" alt="Músicos ensayando" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/donaciones_3.jpg" alt="Director de orquesta" loading="lazy">
+                    </div>
+                </div>
+                <button class="carousel-button prev" aria-label="Imagen anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next" aria-label="Imagen siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-dots" role="tablist">
+                    <span class="dot active" data-index="0" role="tab" aria-selected="true" aria-label="Imagen 1"></span>
+                    <span class="dot" data-index="1" role="tab" aria-selected="false" aria-label="Imagen 2"></span>
+                    <span class="dot" data-index="2" role="tab" aria-selected="false" aria-label="Imagen 3"></span>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Sección de impacto de donaciones -->
+        <section class="donation-impact-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">EL IMPACTO DE TU DONACIÓN</h2>
+                <div class="impact-grid">
+                    <div class="impact-card animate-on-scroll" data-animation="fadeInUp" data-delay="100">
+                        <div class="impact-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Instrumentos</h3>
+                        <p>Proporcionamos instrumentos musicales a niños que de otra manera no tendrían acceso a ellos.</p>
+                    </div>
+                    <div class="impact-card animate-on-scroll" data-animation="fadeInUp" data-delay="200">
+                        <div class="impact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Educación</h3>
+                        <p>Ofrecemos clases de música gratuitas impartidas por profesionales altamente calificados.</p>
+                    </div>
+                    <div class="impact-card animate-on-scroll" data-animation="fadeInUp" data-delay="300">
+                        <div class="impact-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Comunidad</h3>
+                        <p>Creamos espacios seguros donde los jóvenes pueden desarrollar habilidades sociales y valores.</p>
+                    </div>
+                    <div class="impact-card animate-on-scroll" data-animation="fadeInUp" data-delay="400">
+                        <div class="impact-icon">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+                        <h3>Cultura</h3>
+                        <p>Promovemos el acceso a la cultura y las artes en comunidades con recursos limitados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de llamado de acción para donaciones -->
+        <section class="contact-donation-section">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll" data-animation="fadeIn">CÓMO DONAR</h2>
+                <div class="contact-donation-content animate-on-scroll" data-animation="fadeIn" data-delay="100">
+                    <div class="contact-info-card">
+                        <div class="contact-header">
+                            <div class="contact-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3>¡Queremos conocerte!</h3>
+                        </div>
+                        <div class="contact-body">
+                            <p class="contact-description">
+                                Para realizar tu donación y conocer más sobre nuestros proyectos, te invitamos a acercarte a nuestras instalaciones o comunicarte directamente con la <strong>Asociación Amigos de la Orquesta</strong>.
+                            </p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Visítanos</h4>
+                                        <p>Acércate a nuestras instalaciones en Ciudad Guayana</p>
+                                        <span class="contact-detail">Horario de atención: Lunes a Viernes, 8:00 AM - 5:00 PM</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Llámanos</h4>
+                                        <p>Comunícate con la Asociación de Representantes</p>
+                                        <span class="contact-detail">Te atenderemos con gusto para coordinar tu donación</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Escríbenos</h4>
+                                        <p>Envía un mensaje a través de nuestras redes sociales</p>
+                                        <span class="contact-detail">Responderemos a la brevedad posible</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="donation-benefits animate-on-scroll" data-animation="fadeIn" data-delay="300">
+                    <h4>¿Por qué contactarnos directamente?</h4>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Conoce personalmente nuestro trabajo</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Ve el impacto directo de tu donación</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <span>Conecta con nuestra comunidad</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Recibe reconocimiento oficial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de agradecimiento -->
+        <section class="thank-you-section">
+            <div class="container">
+                <div class="thank-you-content animate-on-scroll" data-animation="fadeIn">
+                    <h2>GRACIAS POR TU APOYO</h2>
+                    <p>Cada donación, sin importar su tamaño, hace una diferencia significativa en nuestra misión de transformar vidas a través de la música. ❤️ </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+
+                <!-- Sección izquierda: Logo y descripción -->
+                <div class="footer-app-section animate-on-scroll" data-animation="fadeIn">
+                    <div class="footer-logo">
+                        <figure class="logo-wrapper">
+                            <img src="img/logo-nocturno.png" alt="Logo El Sistema (modo oscuro)" loading="lazy">
+                        </figure>
+                        <div class="logo-text-footer">
+                            <p class="bold">EL SISTEMA</p>
+                            <p>Núcleo Ciudad Guayana</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Disfruta de los mejores conciertos de El Sistema Núcleo Ciudad Guayana.
+                    </p>
+                </div>
+
+                <!-- Sección central: Enlaces institucionales y online -->
+                <div class="footer-links-section">
+                    <div class="footer-links-column animate-on-scroll" data-animation="fadeIn" data-delay="200">
+                        <h3>INSTITUCIÓN</h3>
+                        <ul>
+                            <li><a href="https://elsistema.org.ve/">Descubre El Sistema</a></li>
+                            <li><a href="quienes-somos.html">Nuestra historia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección derecha: "TÚ ERES..." -->
+                <div class="footer-you-are-section animate-on-scroll" data-animation="fadeIn" data-delay="600">
+                    <h3>QUIERO...</h3>
+                    <div class="you-are-buttons">
+                        <a href="organizador-eventos.html" class="you-are-btn">Organizar un evento</a>
+                        <a href="posibles-patrocinadores.html" class="you-are-btn">Ser un patrocinante</a>
+                        <a href="buzon-sugerencias.html" class="you-are-btn">Dejar una sugerencia</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de patrocinadores -->
+            <div class="sponsors-section animate-on-scroll" data-animation="fadeInUp">
+                <h3 class="sponsors-title">NUESTROS PATROCINADORES</h3>
+                <div class="sponsors-logos">
+                    <a class="sponsor-logo" aria-label="Patrocinador 1">
+                        <img src="img/logo_patrocinador_1.png" alt="Logo Patrocinador 1">
+                    </a>
+                    <a  class="sponsor-logo" aria-label="Patrocinador 2">
+                        <img src="img/logo_patrocinador_9.png" alt="Logo Patrocinador 2">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 3">
+                        <img src="img/logo_patrocinador_3.png" alt="Logo Patrocinador 3">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 4">
+                        <img src="img/logo_patrocinador_4.png" alt="Logo Patrocinador 4">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_5.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_6.PNG" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_7.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_8.png" alt="Logo Patrocinador 5">
+                    </a>
+                    <a class="sponsor-logo" aria-label="Patrocinador 5">
+                        <img src="img/logo_patrocinador_2.png" alt="Logo Patrocinador 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chatbot-button.js"></script>
+</body>
+</html>
