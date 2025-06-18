@@ -1,11 +1,11 @@
 /* Estilos específicos para la página de Orquesta Regional */
 :root {
-  --regional-navy: #022169;
-  --regional-gold: #f0e000;
-  --regional-blue: #004da9;
-  --light-navy: rgba(2, 33, 105, 0.2);
-  --light-gold: rgba(240, 224, 0, 0.2);
-  --light-blue: rgba(0, 77, 169, 0.2);
+  --regional-navy: #00addc;
+  --regional-gold: #72d549;
+  --regional-blue: #00c4b3;
+  --light-navy: rgba(2, 67, 105, 0.2);
+  --light-gold: rgba(92, 240, 0, 0.2);
+  --light-blue: rgba(0, 169, 152, 0.2);
 }
 
 /* Header personalizado para Orquesta Regional */
@@ -289,7 +289,7 @@
 
 .director-card:hover {
   transform: translateX(10px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(2, 33, 105, 0.2);
+  box-shadow: 0 10px 25px rgba(8, 50, 147, 0.2);
   border-color: var(--regional-gold);
 }
 
@@ -316,7 +316,7 @@
 
 .director-card-info p {
   font-size: 1rem;
-  color: var(--regional-navy);
+  color: #00addc;
   font-weight: 500;
 }
 

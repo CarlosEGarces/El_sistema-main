@@ -105,7 +105,7 @@ function createInscriptionPopup() {
         position: relative;
         z-index: 2;
     `
-  headerSubtitle.textContent = "Únete a El Sistema Núcleo Ciudad guayana"
+  headerSubtitle.textContent = "Únete a El Sistema Núcleo Ciudad Guayana"
 
   // Crear el contenido del popup
   const content = document.createElement("div")
