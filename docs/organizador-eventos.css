@@ -558,7 +558,7 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.card-icon {
+.card-draw {
   font-size: 2rem;
   color: var(--sistema-green);
   margin-right: var(--spacing-md);
@@ -607,6 +607,10 @@ body {
 .benefit-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
 }
 
 .benefit-icon {
@@ -722,10 +726,19 @@ body {
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-bottom: 100%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
 }
 
 .form-embed iframe {
   border-radius: var(--border-radius);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Animaciones */
@@ -796,11 +809,6 @@ body {
 
   .contact-content {
     flex-direction: column;
-  }
-
-  .footer-main {
-    grid-template-columns: 1fr;
-    text-align: center;
   }
 
   .logo-social {

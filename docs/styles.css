@@ -541,7 +541,7 @@ h3,
   background-color: var(--bg-color);
   border: 2px solid var(--sistema-magenta);
   border-radius: var(--border-radius);
-  min-width: 180px;
+  min-width: 250px;
   padding: var(--spacing-xs) 0;
   list-style: none;
   opacity: 0;

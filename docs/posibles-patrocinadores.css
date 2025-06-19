@@ -816,10 +816,19 @@ body {
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+    padding-bottom: 100%; /* Aumenta este valor para hacer el iframe más largo */
+    height: 0;
+    overflow: hidden;
 }
 
 .form-embed iframe {
   border-radius: var(--border-radius);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Animaciones */
@@ -894,11 +903,6 @@ body {
 
   .contact-content {
     flex-direction: column;
-  }
-
-  .footer-main {
-    grid-template-columns: 1fr;
-    text-align: center;
   }
 
   .logo-social {

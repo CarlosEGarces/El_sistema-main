@@ -1505,9 +1505,9 @@ function processUserMessage(userInput, chatBox) {
       `
     botResponseText = detailsHTML
   } else if (
-    normalizedInput.includes("ennio") ||
     normalizedInput.includes("ennio palumbi") ||
     normalizedInput.includes("palumbi") ||
+    normalizedInput.includes("ennio") ||
     normalizedInput.includes("maestro palumbi") ||
     normalizedInput.includes("fundador palumbi")
   ) {

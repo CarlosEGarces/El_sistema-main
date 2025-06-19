@@ -56,10 +56,6 @@ const eventData = {
     date: "Febrero 2025",
     images: [
       {
-        src: "../img/evento2_1.jpg",
-
-      },
-      {
         src: "../img/evento2_2.jpg",
         
       },
@@ -102,10 +98,6 @@ const eventData = {
        
       },
       {
-        src: "../img/evento3_6.jpg",
-        
-      },
-      {
         src: "../img/evento3_7.jpg",
         
       },
@@ -130,55 +122,7 @@ const eventData = {
 
       },
       {
-        src: "../img/evento3_13.JPG",
-        
-      },
-      {
         src: "../img/evento3_14.JPG",
-        
-      },
-      {
-        src: "../img/evento3_15.JPG",
-        
-      },
-      {
-        src: "../img/evento3_16.JPG",
-       
-      },
-      {
-        src: "../img/evento3_17.JPG",
-        
-      },
-      {
-        src: "../img/evento3_18.JPG",
-        
-      },
-      {
-        src: "../img/evento3_19.JPG",
-        
-      },
-      {
-        src: "../img/evento3_20.JPG",
-        
-      },
-      {
-        src: "../img/evento3_21.JPG",
-        
-      },
-      {
-        src: "../img/evento3_22.JPG",
-        
-      },
-      {
-        src: "../img/evento3_23.JPG",
-        
-      },
-      {
-        src: "../img/evento3_24.JPG",
-        
-      },
-      {
-        src: "../img/evento3_25.JPG",
         
       },
     ],
@@ -275,38 +219,6 @@ const eventData = {
       },
       {
         src: "../img/evento5_2.jpg",
-        
-      },
-      {
-        src: "../img/evento5_3.jpg",
-        
-      },
-      {
-        src: "../img/evento5_4.jpg",
-        
-      },
-      {
-        src: "../img/evento5_5.jpg",
-       
-      },
-      {
-        src: "../img/evento5_6.jpg",
-        
-      },
-      {
-        src: "../img/evento5_7.jpg",
-        
-      },
-      {
-        src: "../img/evento5_8.jpg",
-        
-      },
-      {
-        src: "../img/evento5_9.jpg",
-        
-      },
-      {
-        src: "../img/evento5_10.jpg",
         
       },
     ],
@@ -610,32 +522,33 @@ function initImageModal() {
   const prevButton = document.querySelector(".prev-image")
   const nextButton = document.querySelector(".next-image")
 
-  // Función para abrir el modal
+ // Función para abrir el modal
   function openModal(index) {
-    if (currentEventImages.length === 0) return
-
-    currentImageIndex = index
-    const image = currentEventImages[currentImageIndex]
-
-    modalImage.src = image.src
-    modalTitle.textContent = image.title
-    modalDescription.textContent = image.description
-
-    modal.style.display = "block"
-    document.body.style.overflow = "hidden"
-
-    // Añadir animación de entrada
-    modalImage.style.opacity = "0"
-    setTimeout(() => {
-      modalImage.style.opacity = "1"
-      modalImage.style.transition = "opacity 0.5s ease"
-    }, 100)
+      if (currentEventImages.length === 0) return;
+      currentImageIndex = index;
+      const image = currentEventImages[currentImageIndex];
+      modalImage.src = image.src;
+      modalTitle.textContent = image.title;
+      modalDescription.textContent = image.description;
+      modal.style.display = "block";
+      document.body.style.overflow = "hidden";
+      // Ocultar el botón de modo diurno/nocturno
+      const themeToggleButton = document.getElementById("theme-toggle");
+      themeToggleButton.style.visibility = "hidden";
+      // Añadir animación de entrada
+      modalImage.style.opacity = "0";
+      setTimeout(() => {
+          modalImage.style.opacity = "1";
+          modalImage.style.transition = "opacity 0.5s ease";
+      }, 100);
   }
-
   // Función para cerrar el modal
   function closeModalFunc() {
-    modal.style.display = "none"
-    document.body.style.overflow = ""
+      modal.style.display = "none";
+      document.body.style.overflow = "";
+      // Mostrar el botón de modo diurno/nocturno
+      const themeToggleButton = document.getElementById("theme-toggle");
+      themeToggleButton.style.visibility = "visible";
   }
 
   // Función para mostrar la imagen anterior
